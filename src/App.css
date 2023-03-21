@@ -1,0 +1,51 @@
+/* Header */
+
+.header {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 80px;
+  height: 90px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+.header:hover {
+  background-color: white;
+}
+
+.header-logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.header-nav a {
+  padding: 0 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+}
+
+.header-button button {
+  cursor: pointer;
+}
+
+/* Home */
+
+.home {
+  background-color: black;
+  height: 100vh;
+}
