@@ -2,10 +2,11 @@ import { useState } from "react";
 
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const location = useLocation();
 
   return (
     <div className="header">
@@ -14,19 +15,44 @@ const Header = () => {
       </div>
       <ul className="header-nav">
         <li>
-          <Link to={"/"}>HOME</Link>
+          <Link
+            to={"/"}
+            className={location.pathname === "/" ? "curlocation" : ""}
+          >
+            HOME
+          </Link>
         </li>
         <li>
-          <Link to={"/spring"}>SPRING</Link>
+          <Link
+            to={"/spring"}
+            className={location.pathname === "/spring" ? "curlocation" : ""}
+          >
+            SPRING
+          </Link>
         </li>
         <li>
-          <Link to={"/summer"}>SUMMER</Link>
+          <Link
+            to={"/summer"}
+            className={location.pathname === "/summer" ? "curlocation" : ""}
+          >
+            SUMMER
+          </Link>
         </li>
         <li>
-          <Link to={"/autumn"}>AUTUMN</Link>
+          <Link
+            to={"/autumn"}
+            className={location.pathname === "/autumn" ? "curlocation" : ""}
+          >
+            AUTUMN
+          </Link>
         </li>
         <li>
-          <Link to={"/winter"}>WINTER</Link>
+          <Link
+            to={"/winter"}
+            className={location.pathname === "/winter" ? "curlocation" : ""}
+          >
+            WINTER
+          </Link>
         </li>
       </ul>
       <div className="header-button">
