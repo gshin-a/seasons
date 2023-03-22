@@ -1,15 +1,12 @@
-import { useState } from "react";
-
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link, useLocation } from "react-router-dom";
 
-const Header = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const Header = ({ isDarkMode, setIsDarkMode }) => {
   const location = useLocation();
 
   return (
-    <div className="header">
+    <div className={"header" + (isDarkMode ? " header-darkmode" : "")}>
       <div className="header-logo">
         <span>Four Seasons</span>
       </div>

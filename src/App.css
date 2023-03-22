@@ -1,3 +1,10 @@
+/* Home */
+
+.home-darkmode {
+  background-color: black;
+  color: white;
+}
+
 /* Header */
 
 .header {
@@ -17,12 +24,17 @@
   background-color: rgba(247, 247, 244, 0.8);
 }
 
+.header-darkmode:hover {
+  background-color: rgba(75, 74, 74, 0.8);
+}
+
 .header-logo {
   width: 200px;
   display: flex;
   align-items: center;
   font-size: 30px;
   font-weight: bold;
+  cursor: default;
 }
 
 .header-nav {
@@ -41,9 +53,17 @@
   font-weight: bold;
 }
 
+.header-darkmode .header-nav a {
+  color: white;
+}
+
 .header-nav .curlocation {
   color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+}
+
+.header-darkmode .header-nav .curlocation {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header-button {
@@ -54,6 +74,11 @@
 .header-button button {
   cursor: pointer;
   background: none;
+}
+
+.header-darkmode .header-button button {
+  color: white;
+  border-color: white;
 }
 
 /* Footer */
@@ -68,6 +93,11 @@
   background-color: rgba(247, 247, 244, 0.7);
 }
 
+.home-darkmode .footer {
+  background-color: rgba(75, 74, 74, 0.8);
+  color: white;
+}
+
 .footer p {
   margin: 0;
 }
@@ -76,17 +106,34 @@
   text-decoration: none;
 }
 
+.home-darkmode .footer-github a {
+  color: rgb(137, 155, 241);
+}
+
 .footer-image-button {
   background: none;
   border: 1px solid;
 }
 
+.home-darkmode .footer-image-button {
+  color: white;
+}
+
 .footer-image-source {
-  margin-left: 30px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.home-darkmode .footer-image-source {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-image-source a {
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.home-darkmode .footer-image-source a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .image-hidden {
@@ -153,6 +200,22 @@
   margin-left: 100vw;
 }
 
+.home-darkmode .carousel-image-spring {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-spring-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-summer {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-summer-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-autumn {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-autumn-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-winter {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-winter-darkmode.jpg");
+}
+
 .carousel-button {
   display: flex;
   flex-direction: column;
@@ -167,6 +230,10 @@
   cursor: pointer;
   background: none;
   border: none;
+}
+
+.home-darkmode .carousel-button button {
+  color: white;
 }
 
 .carousel-button .carousel-button-autoslide {
@@ -209,6 +276,10 @@
   cursor: pointer;
 }
 
+.home-darkmode .maincontent1-left-button {
+  color: white;
+}
+
 .maincontent1-right {
   width: 50%;
   height: 100vh;
@@ -236,6 +307,10 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.home-darkmode .maincontent1-right-button button {
+  color: white;
 }
 
 .maincontent2-left {
@@ -267,6 +342,10 @@
   cursor: pointer;
 }
 
+.home-darkmode .maincontent2-left-button button {
+  color: white;
+}
+
 .maincontent2-right {
   width: 50%;
   height: 100vh;
@@ -291,6 +370,10 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.home-darkmode .maincontent2-right-button {
+  color: white;
 }
 
 .button-hidden {

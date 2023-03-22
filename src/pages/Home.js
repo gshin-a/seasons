@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { MainContent1, MainContent2 } from "./../components/MainContents";
 
 const springText = `Spring in Korea (Mar-May) is a beautiful season with blooming flowers
@@ -18,9 +20,10 @@ const autumnText = `Autumn in Korea (September to November) is a season of mild 
 const winterText = `Winter in Korea (Dec-Feb) offers a unique and unforgettable experience for foreigners. With temperatures dropping below zero, visitors can expect to see snow-covered landscapes and enjoy various winter activities such as skiing, snowboarding, and ice-skating. The country celebrates various winter festivals, including Seoul Lantern Festival and Daegwallyeong Snow Flower Festival. Visitors can also indulge in delicious winter foods like hotteok and tteokbokki. It's important to prepare for the cold weather by dressing warmly and taking necessary precautions to stay safe in icy conditions.`;
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <div className="home">
-      <Header />
+    <div className={"home" + (isDarkMode ? " home-darkmode" : "")}>
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Carousel />
       <MainContent1
         text={springText}
@@ -58,6 +61,7 @@ const Home = () => {
         ]}
         season="winter"
       />
+      <Footer />
     </div>
   );
 };

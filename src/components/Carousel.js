@@ -50,7 +50,7 @@ const carouselStateList = {
   3: "",
 };
 
-const Carousel = () => {
+const Carousel = ({ isDarkMode }) => {
   const [carouselState, setCarouselState] = useState(carouselStateList[0]);
   const [autoslide, setAutoslide] = useState(true);
 
@@ -71,7 +71,7 @@ const Carousel = () => {
   }, [autoslide]);
 
   return (
-    <div className="carousel">
+    <div className={"carousel" + (isDarkMode ? " carousel-darkmode" : "")}>
       <div className={"carousel-image-spring" + carouselState}>
         <CarouselButton
           handleCarousel={handleCarousel}

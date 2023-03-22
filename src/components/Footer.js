@@ -27,7 +27,7 @@ const Footer = () => {
       >
         <a href="https://kr.freepik.com/free-photo/pink-tree_11306591.htm?query=%ED%95%9C%EA%B5%AD%20%EB%B4%84#from_view=detail_alsolike">
           작가 tawatchai07
-        </a>
+        </a>{" "}
         출처 Freepik
         <br />
         <a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5131925">
@@ -67,6 +67,42 @@ const Footer = () => {
           Image by tawatchai07
         </a>{" "}
         on Freepik
+        <br />
+        <a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1950544">
+          Pixabay
+        </a>
+        로부터 입수된{" "}
+        <a href="https://pixabay.com/ko/users/hachiyuuki-4175582/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1950544">
+          Hachiyuuki
+        </a>
+        님의 이미지 입니다.
+        <br />
+        <a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5132776">
+          Pixabay
+        </a>
+        로부터 입수된{" "}
+        <a href="https://pixabay.com/ko/users/joodan-16368173/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5132776">
+          Dan Joo
+        </a>
+        님의 이미지 입니다.
+        <br />
+        <a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2385624">
+          Pixabay
+        </a>
+        로부터 입수된{" "}
+        <a href="https://pixabay.com/ko/users/2481277-2481277/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2385624">
+          hongwon jun
+        </a>
+        님의 이미지 입니다.
+        <br />
+        <a href="https://pixabay.com/ko//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4839388">
+          Pixabay
+        </a>
+        로부터 입수된{" "}
+        <a href="https://pixabay.com/ko/users/chulmin1700-15022416/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4839388">
+          chulmin park
+        </a>
+        님의 이미지 입니다.
       </div>
     </div>
   );
