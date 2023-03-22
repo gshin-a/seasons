@@ -3,8 +3,6 @@ import { useState } from "react";
 const Footer = () => {
   const [imageSrcHidden, setImageSrcHidden] = useState(true);
 
-  console.log(imageSrcHidden);
-
   return (
     <div className="footer">
       <p>Copyright © 2023 Four Seasons. All rights reserved.</p>

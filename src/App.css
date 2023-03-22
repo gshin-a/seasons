@@ -274,10 +274,11 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #551a8b;
 }
 
 .home-darkmode .maincontent1-left-button {
-  color: white;
+  color: rgb(137, 155, 241);
 }
 
 .maincontent1-right {
@@ -370,10 +371,11 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #551a8b;
 }
 
 .home-darkmode .maincontent2-right-button {
-  color: white;
+  color: rgb(137, 155, 241);
 }
 
 .button-hidden {
