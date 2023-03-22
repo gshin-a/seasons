@@ -15,6 +15,8 @@ const summerText = `Summer in Korea (June-August) is hot and humid, but it's als
 
 const autumnText = `Autumn in Korea (September to November) is a season of mild weather and vibrant foliage. It's the perfect time for outdoor activities like hiking, biking, and walking. Visitors can enjoy stunning views of colorful foliage while hiking through national parks like Seoraksan, Naejangsan, and Bukhansan. Autumn is also known for delicious seasonal foods like Korean chestnuts, sweet potatoes, pumpkins, and persimmons. Experience the beauty of nature and traditional Korean culture in autumn in Korea.`;
 
+const winterText = `Winter in Korea (Dec-Feb) offers a unique and unforgettable experience for foreigners. With temperatures dropping below zero, visitors can expect to see snow-covered landscapes and enjoy various winter activities such as skiing, snowboarding, and ice-skating. The country celebrates various winter festivals, including Seoul Lantern Festival and Daegwallyeong Snow Flower Festival. Visitors can also indulge in delicious winter foods like hotteok and tteokbokki. It's important to prepare for the cold weather by dressing warmly and taking necessary precautions to stay safe in icy conditions.`;
+
 const Home = () => {
   return (
     <div className="home">
@@ -26,12 +28,36 @@ const Home = () => {
           "/assets/maincontent-spring-1.jpg",
           "/assets/maincontent-spring-2.jpg",
           "/assets/maincontent-spring-3.jpg",
-          "/assets/maincontent-spring-4.jpg",
         ]}
+        season="spring"
       />
-      <MainContent2 text={summerText} />
-      <MainContent1 text={autumnText} />
-      <MainContent2 text={springText} />
+      <MainContent2
+        text={summerText}
+        imgSrc={[
+          "/assets/maincontent-summer-1.jpg",
+          "/assets/maincontent-summer-2.jpg",
+          "/assets/maincontent-summer-3.jpg",
+        ]}
+        season="summer"
+      />
+      <MainContent1
+        text={autumnText}
+        imgSrc={[
+          "/assets/maincontent-autumn-1.jpg",
+          "/assets/maincontent-autumn-2.jpg",
+          "/assets/maincontent-autumn-3.jpg",
+        ]}
+        season="autumn"
+      />
+      <MainContent2
+        text={winterText}
+        imgSrc={[
+          "/assets/maincontent-winter-1.jpg",
+          "/assets/maincontent-winter-2.jpg",
+          "/assets/maincontent-winter-3.jpg",
+        ]}
+        season="winter"
+      />
     </div>
   );
 };

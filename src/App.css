@@ -14,7 +14,7 @@
 }
 
 .header:hover {
-  background-color: white;
+  background-color: rgba(247, 247, 244, 0.8);
 }
 
 .header-logo {
@@ -56,12 +56,42 @@
   background: none;
 }
 
-/* Home */
+/* Footer */
 
-/* .home {
-  background-color: black;
-  height: 100vh;
-} */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: rgba(247, 247, 244, 0.7);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-github a {
+  text-decoration: none;
+}
+
+.footer-image-button {
+  background: none;
+  border: 1px solid;
+}
+
+.footer-image-source {
+  margin-left: 30px;
+}
+
+.footer-image-source a {
+  color: black;
+}
+
+.image-hidden {
+  display: none;
+}
 
 /* Carousel */
 
@@ -73,7 +103,7 @@
 }
 
 .carousel-image-spring {
-  background-image: url("./images/carousel-spring.jpg");
+  background-image: url("C:\seasons\seasons\public\assets\carousel-spring.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -83,7 +113,7 @@
 }
 
 .carousel-image-summer {
-  background-image: url("./images/carousel-summer.jpg");
+  background-image: url("C:\seasons\seasons\public\assets\carousel-summer.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -93,7 +123,7 @@
 }
 
 .carousel-image-autumn {
-  background-image: url("./images/carousel-autumn.jpg");
+  background-image: url("C:\seasons\seasons\public\assets\carousel-autumn.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -103,7 +133,7 @@
 }
 
 .carousel-image-winter {
-  background-image: url("./images/carousel-winter.jpg");
+  background-image: url("C:\seasons\seasons\public\assets\carousel-winter.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -211,6 +241,30 @@
 .maincontent2-left {
   width: 50%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.maincontent2-left img {
+  display: block;
+  width: 90%;
+  height: 60%;
+  object-fit: cover;
+  padding-left: 50px;
+}
+
+.maincontent2-left-button {
+  padding-left: 50px;
+}
+
+.maincontent2-left-button button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .maincontent2-right {
@@ -219,6 +273,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .maincontent2-right-article {
@@ -226,6 +282,15 @@
   padding-right: 60px;
   line-height: 1.5;
   font-size: 20px;
+}
+
+.maincontent2-right-button {
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .button-hidden {
