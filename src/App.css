@@ -24,6 +24,15 @@
   background-color: rgba(247, 247, 244, 0.8);
 }
 
+.header-spring {
+  position: sticky;
+  background-color: pink;
+}
+
+.header-spring:hover {
+  background-color: pink;
+}
+
 .header-darkmode:hover {
   background-color: rgba(75, 74, 74, 0.8);
 }
@@ -380,4 +389,31 @@
 
 .button-hidden {
   visibility: hidden;
+}
+
+/* Spring */
+
+.spring-content {
+  display: flex;
+}
+
+.spring-left-sidebar {
+  background-color: pink;
+  width: 20vw;
+  height: 500px;
+  margin-left: 5vw;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.spring-left-sidebar ul {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.spring-left-sidebar li {
+  list-style: none;
 }

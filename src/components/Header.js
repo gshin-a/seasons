@@ -2,11 +2,15 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link, useLocation } from "react-router-dom";
 
-const Header = ({ isDarkMode, setIsDarkMode }) => {
+const Header = ({ isDarkMode, setIsDarkMode, type }) => {
   const location = useLocation();
 
   return (
-    <div className={"header" + (isDarkMode ? " header-darkmode" : "")}>
+    <div
+      className={
+        "header" + (isDarkMode ? " header-darkmode" : "") + ` header-${type}`
+      }
+    >
       <div className="header-logo">
         <span>Four Seasons</span>
       </div>
