@@ -11,6 +11,7 @@ import Sidebar from "../components/Sidebar";
 const Spring = ({ isDarkMode, setIsDarkMode }) => {
   const [springState, setSpringState] = useState("intro");
   const [springPostData, setSpringPostData] = useState([]);
+  const [openSidebar, setOpenSidebar] = useState(true);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -32,7 +33,15 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
       />
       {/* sidebar는 component에 넣어서 재사용가능할듯. `${type}-left-sidebar` 이런 식으로 사용하면 됨 */}
       <div className="spring-content">
-        <Sidebar springState={springState} setSpringState={setSpringState} />
+        {openSidebar ? (
+          <Sidebar
+            springState={springState}
+            setSpringState={setSpringState}
+            setOpenSidebar={setOpenSidebar}
+          />
+        ) : (
+          <button onClick={() => setOpenSidebar(true)}>open sidebar</button>
+        )}
         <div className="spring-maincontent">
           {springState === "intro" && (
             <Introduction setSpringState={setSpringState} />

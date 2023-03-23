@@ -127,6 +127,11 @@
   color: white;
 }
 
+.spring-darkmode .footer {
+  background-color: rgba(75, 74, 74, 0.8);
+  color: white;
+}
+
 .footer p {
   margin: 0;
 }
@@ -139,12 +144,20 @@
   color: rgb(137, 155, 241);
 }
 
+.spring-darkmode .footer-github a {
+  color: rgb(137, 155, 241);
+}
+
 .footer-image-button {
   background: none;
   border: 1px solid;
 }
 
 .home-darkmode .footer-image-button {
+  color: white;
+}
+
+.spring-darkmode .footer-image-button {
   color: white;
 }
 
@@ -157,11 +170,19 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.spring-darkmode .footer-image-source {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .footer-image-source a {
   color: rgba(0, 0, 0, 0.5);
 }
 
 .home-darkmode .footer-image-source a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.spring-darkmode .footer-image-source a {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -503,18 +524,316 @@
   color: rgb(137, 155, 241);
 }
 
+/* Activity */
+
+.activity {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.activity-content {
+  width: 100%;
+  height: 60vh;
+  min-width: 500px;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.activity-content-up-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 49.5%;
+  gap: 10px;
+  margin-bottom: 1%;
+}
+
+.activity-content-1 {
+  background-image: url("/public/assets/activity-content-1.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-1:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-up-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  gap: 10px;
+}
+
+.activity-content-2 {
+  background-image: url("/public/assets/activity-content-2.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-2:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-3 {
+  background-image: url("/public/assets/activity-content-3.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-3:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-4 {
+  background-image: url("/public/assets/activity-content-4.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-4:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-5 {
+  background-image: url("/public/assets/activity-content-5.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-5:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-down-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 49.5%;
+  gap: 10px;
+  margin-bottom: 1%;
+}
+
+.activity-content-down-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  gap: 10px;
+}
+
+.activity-content-6 {
+  background-image: url("/public/assets/activity-content-6.jpg");
+  background-size: 110%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-6:hover {
+  background-size: 120%;
+  background-position: center;
+}
+
+.activity-content-7 {
+  background-image: url("/public/assets/activity-content-7.jpg");
+  background-size: 130%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-7:hover {
+  background-size: 140%;
+  background-position: center;
+}
+
+.activity-content-8 {
+  background-image: url("/public/assets/activity-content-8.jpg");
+  background-size: 100%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-8:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.activity-content-9 {
+  background-image: url("/public/assets/activity-content-9.jpg");
+  background-size: 130%;
+  background-position: center;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-9:hover {
+  background-size: 140%;
+  background-position: center;
+}
+
+.activity-content-10 {
+  background-image: url("/public/assets/activity-content-10.jpg");
+  background-size: 130%;
+  background-position: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: background-size 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-content-10:hover {
+  background-size: 140%;
+  background-position: center;
+}
+
+.activity-content-food .activity-content-1 {
+  background-image: url("/public/assets/activity-food-content-1.jpg");
+}
+
 /* Board */
 
-.board-item {
+.board {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.board input {
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.board-input-resetbutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.spring-darkmode .board-input-resetbutton {
+  color: white;
+}
+
+.board-item {
+  margin-bottom: 20px;
+}
+
+.board-item-post {
+  padding: 10px;
   display: flex;
+  background-color: rgba(255, 192, 203, 0.3);
+  cursor: pointer;
 }
 
-.board-item-postnumber {
-  margin-right: 30px;
+.board-item-post-postnumber {
+  margin-right: 20px;
+  border-right: 2px solid pink;
+  padding-right: 15px;
 }
 
-.board-item-title {
+.spring-darkmode .board-item-post-postnumber {
+  border-right: 2px solid rgb(117, 71, 78);
+}
+
+.board-item-post-title {
   flex-grow: 1;
+}
+
+.board-item-post-user {
+  border-left: 2px solid pink;
+  padding-left: 15px;
+}
+
+.spring-darkmode .board-item-post-user {
+  border-left: 2px solid rgb(117, 71, 78);
+}
+
+.board-item-content {
+  background-color: rgba(255, 192, 203, 0.4);
+  padding: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.board-item-content-display {
+  display: block;
 }
