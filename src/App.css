@@ -20,13 +20,21 @@
   z-index: 1;
 }
 
+.header-darkmode {
+  color: white;
+}
+
 .header:hover {
   background-color: rgba(247, 247, 244, 0.8);
 }
 
 .header-spring {
   position: sticky;
-  background-color: pink;
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.spring-darkmode .header-spring {
+  background-color: rgba(75, 74, 74, 0.8);
 }
 
 .header-spring:hover {
@@ -34,7 +42,7 @@
 }
 
 .header-darkmode:hover {
-  background-color: rgba(75, 74, 74, 0.8);
+  background-color: rgba(75, 74, 74, 1);
 }
 
 .header-logo {
@@ -66,12 +74,20 @@
   color: white;
 }
 
+.header-nav li:hover {
+  transform: scale(1.2);
+}
+
 .header-nav .curlocation {
+  pointer-events: none;
+}
+
+.header-nav .curlocation a {
   color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
-.header-darkmode .header-nav .curlocation {
+.header-darkmode .header-nav .curlocation a {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -83,6 +99,10 @@
 .header-button button {
   cursor: pointer;
   background: none;
+}
+
+.header-button button:hover {
+  transform: scale(1.2);
 }
 
 .header-darkmode .header-button button {
@@ -393,27 +413,108 @@
 
 /* Spring */
 
-.spring-content {
-  display: flex;
+.spring-darkmode {
+  background-color: black;
+  color: white;
 }
 
-.spring-left-sidebar {
-  background-color: pink;
-  width: 20vw;
-  height: 500px;
+.spring-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+.spring-maincontent {
+  margin-left: 30vw;
+  margin-right: 10vw;
+  width: 60vw;
+  min-width: 600px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* Sidebar */
+
+.left-sidebar {
+  background-color: rgba(255, 192, 203, 0.8);
+  width: 15vw;
+  height: 550px;
+  min-width: 300px;
   margin-left: 5vw;
   margin-top: 100px;
   border-radius: 5px;
+  position: fixed;
 }
 
-.spring-left-sidebar ul {
-  height: 100%;
+.spring-darkmode .left-sidebar {
+  background-color: rgba(75, 74, 74, 0.8);
+}
 
+.left-sidebar ul {
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.spring-left-sidebar li {
+.left-sidebar li {
   list-style: none;
+}
+
+.left-sidebar button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 2px solid pink;
+}
+
+.spring-darkmode .left-sidebar button {
+  color: white;
+  border-bottom-color: white;
+}
+
+.left-sidebar button:hover {
+  transform: scale(1.1);
+}
+
+.left-sidebar .curlocation {
+  color: rgb(190, 146, 153);
+  pointer-events: none;
+}
+
+.spring-darkmode .left-sidebar .curlocation {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Intro */
+
+.intro button {
+  border: none;
+  background: none;
+  color: #551a8b;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.spring-darkmode .intro button {
+  color: rgb(137, 155, 241);
+}
+
+/* Board */
+
+.board-item {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.board-item-postnumber {
+  margin-right: 30px;
+}
+
+.board-item-title {
+  flex-grow: 1;
 }

@@ -15,45 +15,20 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
         <span>Four Seasons</span>
       </div>
       <ul className="header-nav">
-        <li>
-          <Link
-            to={"/"}
-            className={location.pathname === "/" ? "curlocation" : ""}
-          >
-            HOME
-          </Link>
+        <li className={location.pathname === "/" ? "curlocation" : ""}>
+          <Link to={"/"}>HOME</Link>
         </li>
-        <li>
-          <Link
-            to={"/spring"}
-            className={location.pathname === "/spring" ? "curlocation" : ""}
-          >
-            SPRING
-          </Link>
+        <li className={location.pathname === "/spring" ? "curlocation" : ""}>
+          <Link to={"/spring"}>SPRING</Link>
         </li>
-        <li>
-          <Link
-            to={"/summer"}
-            className={location.pathname === "/summer" ? "curlocation" : ""}
-          >
-            SUMMER
-          </Link>
+        <li className={location.pathname === "/summer" ? "curlocation" : ""}>
+          <Link to={"/summer"}>SUMMER</Link>
         </li>
-        <li>
-          <Link
-            to={"/autumn"}
-            className={location.pathname === "/autumn" ? "curlocation" : ""}
-          >
-            AUTUMN
-          </Link>
+        <li className={location.pathname === "/autumn" ? "curlocation" : ""}>
+          <Link to={"/autumn"}>AUTUMN</Link>
         </li>
-        <li>
-          <Link
-            to={"/winter"}
-            className={location.pathname === "/winter" ? "curlocation" : ""}
-          >
-            WINTER
-          </Link>
+        <li className={location.pathname === "/winter" ? "curlocation" : ""}>
+          <Link to={"/winter"}>WINTER</Link>
         </li>
       </ul>
       <div className="header-button">
