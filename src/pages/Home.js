@@ -26,36 +26,36 @@ const Home = ({ isDarkMode, setIsDarkMode }) => {
       <MainContent1
         text={springText}
         imgSrc={[
-          "/assets/maincontent-spring-1.jpg",
-          "/assets/maincontent-spring-2.jpg",
-          "/assets/maincontent-spring-3.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-spring-1.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-spring-2.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-spring-3.jpg",
         ]}
         season="spring"
       />
       <MainContent2
         text={summerText}
         imgSrc={[
-          "/assets/maincontent-summer-1.jpg",
-          "/assets/maincontent-summer-2.jpg",
-          "/assets/maincontent-summer-3.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-summer-1.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-summer-2.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-summer-3.jpg",
         ]}
         season="summer"
       />
       <MainContent1
         text={autumnText}
         imgSrc={[
-          "/assets/maincontent-autumn-1.jpg",
-          "/assets/maincontent-autumn-2.jpg",
-          "/assets/maincontent-autumn-3.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-autumn-1.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-autumn-2.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-autumn-3.jpg",
         ]}
         season="autumn"
       />
       <MainContent2
         text={winterText}
         imgSrc={[
-          "/assets/maincontent-winter-1.jpg",
-          "/assets/maincontent-winter-2.jpg",
-          "/assets/maincontent-winter-3.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-winter-1.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-winter-2.jpg",
+          process.env.PUBLIC_URL + "/assets/maincontent-winter-3.jpg",
         ]}
         season="winter"
       />
