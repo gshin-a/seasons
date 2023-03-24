@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/seasons/static/css/main.4529a2a3.css",
+    "main.js": "/seasons/static/js/main.69ffc5b7.js",
+    "static/media/carousel-spring.jpg": "/seasons/static/media/carousel-spring.b5a387bbb6af00e91414.jpg",
+    "static/media/activity-food-content-7.jpg": "/seasons/static/media/activity-food-content-7.e029ba25c6516153448e.jpg",
+    "static/media/carousel-autumn.jpg": "/seasons/static/media/carousel-autumn.fee3a5885ace6c218954.jpg",
+    "static/media/activity-content-5.jpg": "/seasons/static/media/activity-content-5.549096cd22cdd2605ff7.jpg",
+    "static/media/carousel-spring-darkmode.jpg": "/seasons/static/media/carousel-spring-darkmode.50fd1be0e6f560c4881d.jpg",
+    "static/media/carousel-winter.jpg": "/seasons/static/media/carousel-winter.aca722715b4f029275bc.jpg",
+    "static/media/activity-food-content-6.jpg": "/seasons/static/media/activity-food-content-6.78570a569dfe292b1448.jpg",
+    "static/media/carousel-winter-darkmode.jpg": "/seasons/static/media/carousel-winter-darkmode.a66586999b2fad54a554.jpg",
+    "static/media/activity-food-content-10.jpg": "/seasons/static/media/activity-food-content-10.4f8ca81aa50d8e1fad3b.jpg",
+    "static/media/carousel-summer-darkmode.jpg": "/seasons/static/media/carousel-summer-darkmode.0e96a4693373195e0777.jpg",
+    "static/media/carousel-autumn-darkmode.jpg": "/seasons/static/media/carousel-autumn-darkmode.c49e58f2b9f990890a8e.jpg",
+    "static/media/activity-content-9.jpg": "/seasons/static/media/activity-content-9.39d3425f1f1f6d9212fc.jpg",
+    "static/media/activity-content-4.jpg": "/seasons/static/media/activity-content-4.30ecdf1732f74d6521bc.jpg",
+    "static/media/activity-content-1.jpg": "/seasons/static/media/activity-content-1.b81c7c24a15504d4dc86.jpg",
+    "static/media/activity-content-8.jpg": "/seasons/static/media/activity-content-8.dc8a15a068d66f119299.jpg",
+    "static/media/carousel-summer.jpg": "/seasons/static/media/carousel-summer.8e4cbe52017c6b24495a.jpg",
+    "static/media/activity-content-2.jpg": "/seasons/static/media/activity-content-2.9126c1cc2a102f059728.jpg",
+    "static/media/activity-food-content-4.jpg": "/seasons/static/media/activity-food-content-4.ee2c012d088b72103460.jpg",
+    "static/media/activity-content-10.jpg": "/seasons/static/media/activity-content-10.5c1d0c1591bba0f74ae9.jpg",
+    "static/media/activity-content-7.jpg": "/seasons/static/media/activity-content-7.ba034780cc97970d6a6d.jpg",
+    "static/media/activity-content-6.jpg": "/seasons/static/media/activity-content-6.1f6b62556fd47083d754.jpg",
+    "static/media/activity-content-3.jpg": "/seasons/static/media/activity-content-3.077cb8340498ebb03530.jpg",
+    "static/media/activity-food-content-5.jpg": "/seasons/static/media/activity-food-content-5.500c6e32396b6a890b41.jpg",
+    "static/media/activity-food-content-8.jpg": "/seasons/static/media/activity-food-content-8.6764840ca3fbae6d8408.jpg",
+    "static/media/activity-food-content-2.jpg": "/seasons/static/media/activity-food-content-2.baf1f07a174d4bf4e103.jpg",
+    "static/media/activity-food-content-3.jpg": "/seasons/static/media/activity-food-content-3.8882b0e0253dc99d7cb5.jpg",
+    "static/media/activity-food-content-9.jpg": "/seasons/static/media/activity-food-content-9.b8b16136c8f28d847954.jpg",
+    "static/media/activity-food-content-1.jpg": "/seasons/static/media/activity-food-content-1.77b70151d6b2f76a3ffa.jpg",
+    "index.html": "/seasons/index.html",
+    "main.4529a2a3.css.map": "/seasons/static/css/main.4529a2a3.css.map",
+    "main.69ffc5b7.js.map": "/seasons/static/js/main.69ffc5b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4529a2a3.css",
+    "static/js/main.69ffc5b7.js"
+  ]
+}
