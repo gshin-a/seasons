@@ -40,9 +40,19 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
             setOpenSidebar={setOpenSidebar}
           />
         ) : (
-          <button onClick={() => setOpenSidebar(true)}>open sidebar</button>
+          <button
+            className="sidebar-open-button"
+            onClick={() => setOpenSidebar(true)}
+          >
+            open sidebar
+          </button>
         )}
-        <div className="spring-maincontent">
+        <div
+          className={
+            "spring-maincontent" +
+            (openSidebar ? "" : " spring-maincontent-fullscreen")
+          }
+        >
           {springState === "intro" && (
             <Introduction setSpringState={setSpringState} />
           )}

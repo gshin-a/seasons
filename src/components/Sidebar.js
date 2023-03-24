@@ -1,13 +1,21 @@
 const Sidebar = ({ springState, setSpringState, setOpenSidebar }) => {
   return (
     <div>
-      <button onClick={() => setOpenSidebar(false)}>close</button>
+      <button
+        className="sidebar-close-button"
+        onClick={() => setOpenSidebar(false)}
+      >
+        close sidebar
+      </button>
       <div className="left-sidebar">
         <ul>
           <li>
             <button
               className={springState === "intro" ? "curlocation" : ""}
-              onClick={() => setSpringState("intro")}
+              onClick={() => {
+                setSpringState("intro");
+                window.scroll(0, 0);
+              }}
             >
               Introduction to Spring
             </button>
@@ -15,7 +23,10 @@ const Sidebar = ({ springState, setSpringState, setOpenSidebar }) => {
           <li>
             <button
               className={springState === "activity" ? "curlocation" : ""}
-              onClick={() => setSpringState("activity")}
+              onClick={() => {
+                setSpringState("activity");
+                window.scroll(0, 0);
+              }}
             >
               Spring Activities
             </button>
@@ -23,7 +34,10 @@ const Sidebar = ({ springState, setSpringState, setOpenSidebar }) => {
           <li>
             <button
               className={springState === "tip" ? "curlocation" : ""}
-              onClick={() => setSpringState("tip")}
+              onClick={() => {
+                setSpringState("tip");
+                window.scroll(0, 0);
+              }}
             >
               Tips for Spring
             </button>
@@ -31,7 +45,10 @@ const Sidebar = ({ springState, setSpringState, setOpenSidebar }) => {
           <li>
             <button
               className={springState === "gallery" ? "curlocation" : ""}
-              onClick={() => setSpringState("gallery")}
+              onClick={() => {
+                setSpringState("gallery");
+                window.scroll(0, 0);
+              }}
             >
               Spring Photo gallery
             </button>
@@ -39,7 +56,10 @@ const Sidebar = ({ springState, setSpringState, setOpenSidebar }) => {
           <li>
             <button
               className={springState === "board" ? "curlocation" : ""}
-              onClick={() => setSpringState("board")}
+              onClick={() => {
+                setSpringState("board");
+                window.scroll(0, 0);
+              }}
             >
               Spring Bulletin board
             </button>

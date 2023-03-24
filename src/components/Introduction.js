@@ -101,7 +101,12 @@ const Introduction = ({ setSpringState }) => {
         arrival of spring and create unforgettable memories.
       </div>
       <br />
-      <button onClick={() => setSpringState("activity")}>
+      <button
+        onClick={() => {
+          setSpringState("activity");
+          window.scroll(0, 0);
+        }}
+      >
         &raquo; look into more about Spring Festival and Events
       </button>
       <br />
@@ -146,7 +151,12 @@ const Introduction = ({ setSpringState }) => {
         experience that celebrates the beauty of spring.
       </div>
       <br />
-      <button onClick={() => setSpringState("activity")}>
+      <button
+        onClick={() => {
+          setSpringState("activity");
+          window.scroll(0, 0);
+        }}
+      >
         &raquo; look into more about Spring Food and Cuisine
       </button>
       <br />
