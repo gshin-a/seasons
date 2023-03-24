@@ -82,7 +82,7 @@ const GalleryItem = ({ title, type }) => {
           </div>
         </div>
         <button
-          onClick={() => {
+          onClick={(e) => {
             const contentWidth = document.querySelector(
               ".gallery-item-content"
             ).offsetWidth;
@@ -118,10 +118,11 @@ const GalleryItem = ({ title, type }) => {
               .style.marginLeft;
             console.log(totalWidth - Math.abs(currentMargin.slice(0, -2)));
             if (
-              totalWidth - Math.abs(currentMargin.slice(0, -2)) <
+              totalWidth - Math.abs(currentMargin.slice(0, -2)) - contentWidth <
               visibleWidth
             ) {
               console.log("이미지 끝");
+              e.target.style.display = "none";
             }
           }}
         >
