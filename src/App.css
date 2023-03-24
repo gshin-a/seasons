@@ -999,6 +999,10 @@
   width: 15vw;
 }
 
+.gallery-item-left-button {
+  visibility: hidden;
+}
+
 /* Board */
 
 .board {
