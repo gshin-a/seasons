@@ -548,22 +548,31 @@
 }
 
 .activity-content-1 {
-  background-image: url("/public/assets/activity-content-1.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
   color: white;
   font-size: 30px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-1:hover {
-  background-size: 110%;
+.activity-content-1-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-1.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-1-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-up-right {
@@ -574,83 +583,115 @@
 }
 
 .activity-content-2 {
-  background-image: url("/public/assets/activity-content-2.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-2:hover {
-  background-size: 110%;
+.activity-content-2-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-2.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-2-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-3 {
-  background-image: url("/public/assets/activity-content-3.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-3:hover {
-  background-size: 110%;
+.activity-content-3-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-3.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-3-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-4 {
-  background-image: url("/public/assets/activity-content-4.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-4:hover {
-  background-size: 110%;
+.activity-content-4-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-4.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-4-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-5 {
-  background-image: url("/public/assets/activity-content-5.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-5:hover {
-  background-size: 110%;
+.activity-content-5-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-5.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-5-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-down-left {
@@ -669,106 +710,183 @@
 }
 
 .activity-content-6 {
-  background-image: url("/public/assets/activity-content-6.jpg");
-  background-size: 110%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-6:hover {
-  background-size: 120%;
+.activity-content-6-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-6.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-6-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-7 {
-  background-image: url("/public/assets/activity-content-7.jpg");
-  background-size: 130%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-7:hover {
-  background-size: 140%;
+.activity-content-7-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-7.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-7-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-8 {
-  background-image: url("/public/assets/activity-content-8.jpg");
-  background-size: 100%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-8:hover {
-  background-size: 110%;
+.activity-content-8-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-8.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-8-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-9 {
-  background-image: url("/public/assets/activity-content-9.jpg");
-  background-size: 130%;
-  background-position: center;
   border-radius: 5px;
-  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
+  overflow: hidden;
 }
 
-.activity-content-9:hover {
-  background-size: 140%;
+.activity-content-9-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("/public/assets/activity-content-9.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.activity-content-9-image:hover {
+  transform: scale(1.1);
 }
 
 .activity-content-10 {
-  background-image: url("/public/assets/activity-content-10.jpg");
-  background-size: 130%;
-  background-position: center;
   border-radius: 5px;
   color: white;
   font-size: 30px;
   font-weight: bold;
-  transition: background-size 0.5s ease;
+  cursor: default;
+  overflow: hidden;
+}
+
+.activity-content-10-image {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
+  justify-content: center;
+  text-align: center;
 
-.activity-content-10:hover {
-  background-size: 140%;
+  background-image: url("/public/assets/activity-content-10.jpg");
+  background-size: cover;
   background-position: center;
+
+  transition: transform 0.5s ease;
 }
 
-.activity-content-food .activity-content-1 {
+.activity-content-10-image:hover {
+  transform: scale(1.1);
+}
+
+.activity-content-food .activity-content-1-image {
   background-image: url("/public/assets/activity-food-content-1.jpg");
+}
+
+.activity-content-food .activity-content-2-image {
+  background-image: url("/public/assets/activity-food-content-2.jpg");
+}
+
+.activity-content-food .activity-content-3-image {
+  background-image: url("/public/assets/activity-food-content-3.jpg");
+}
+
+.activity-content-food .activity-content-4-image {
+  background-image: url("/public/assets/activity-food-content-4.jpg");
+}
+
+.activity-content-food .activity-content-5-image {
+  background-image: url("/public/assets/activity-food-content-5.jpg");
+}
+
+.activity-content-food .activity-content-6-image {
+  background-image: url("/public/assets/activity-food-content-6.jpg");
+}
+
+.activity-content-food .activity-content-7-image {
+  background-image: url("/public/assets/activity-food-content-7.jpg");
+}
+
+.activity-content-food .activity-content-8-image {
+  background-image: url("/public/assets/activity-food-content-8.jpg");
+}
+
+.activity-content-food .activity-content-9-image {
+  background-image: url("/public/assets/activity-food-content-9.jpg");
+}
+
+.activity-content-food .activity-content-10-image {
+  background-image: url("/public/assets/activity-food-content-10.jpg");
 }
 
 /* Board */
