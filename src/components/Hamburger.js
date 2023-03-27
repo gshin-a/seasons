@@ -44,7 +44,6 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
               onClick={() => {
                 navigate("/spring/intro");
                 handleHamburgerClose();
-                window.scrollTo(0, 0);
               }}
             >
               &raquo; Introduction
@@ -53,7 +52,6 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
               onClick={() => {
                 navigate("/spring/activity");
                 handleHamburgerClose();
-                window.scrollTo(0, 0);
               }}
             >
               &raquo; Activities
@@ -62,7 +60,6 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
               onClick={() => {
                 navigate("/spring/tip");
                 handleHamburgerClose();
-                window.scrollTo(0, 0);
               }}
             >
               &raquo; Tips
@@ -71,7 +68,6 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
               onClick={() => {
                 navigate("/spring/gallery");
                 handleHamburgerClose();
-                window.scrollTo(0, 0);
               }}
             >
               &raquo; Gallery
@@ -80,7 +76,6 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
               onClick={() => {
                 navigate("/spring/board");
                 handleHamburgerClose();
-                window.scrollTo(0, 0);
               }}
             >
               &raquo; Board
@@ -92,15 +87,46 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
             SUMMER
           </Link>
           <ul className="hamburger-nav-submenu">
-            <li onClick={() => navigate("/summer/intro")}>
+            <li
+              onClick={() => {
+                navigate("/summer/intro");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Introduction
             </li>
-            <li onClick={() => navigate("/summer/activity")}>
+            <li
+              onClick={() => {
+                navigate("/summer/activity");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Activities
             </li>
-            <li onClick={() => navigate("/summer/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/summer/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/summer/board")}>&raquo; Board</li>
+            <li
+              onClick={() => {
+                navigate("/summer/tip");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Tips
+            </li>
+            <li
+              onClick={() => {
+                navigate("/summer/gallery");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Gallery
+            </li>
+            <li
+              onClick={() => {
+                navigate("/summer/board");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Board
+            </li>
           </ul>
         </li>
         <li className="hamburger-nav-menu">
@@ -108,15 +134,46 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
             AUTUMN
           </Link>
           <ul className="hamburger-nav-submenu">
-            <li onClick={() => navigate("/autumn/intro")}>
+            <li
+              onClick={() => {
+                navigate("/autumn/intro");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Introduction
             </li>
-            <li onClick={() => navigate("/autumn/activity")}>
+            <li
+              onClick={() => {
+                navigate("/autumn/activity");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Activities
             </li>
-            <li onClick={() => navigate("/autumn/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/autumn/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/autumn/board")}>&raquo; Board</li>
+            <li
+              onClick={() => {
+                navigate("/autumn/tip");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Tips
+            </li>
+            <li
+              onClick={() => {
+                navigate("/autumn/gallery");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Gallery
+            </li>
+            <li
+              onClick={() => {
+                navigate("/autumn/board");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Board
+            </li>
           </ul>
         </li>
         <li className="hamburger-nav-menu">
@@ -124,15 +181,46 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
             WINTER
           </Link>
           <ul className="hamburger-nav-submenu">
-            <li onClick={() => navigate("/winter/intro")}>
+            <li
+              onClick={() => {
+                navigate("/winter/intro");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Introduction
             </li>
-            <li onClick={() => navigate("/winter/activity")}>
+            <li
+              onClick={() => {
+                navigate("/winter/activity");
+                handleHamburgerClose();
+              }}
+            >
               &raquo; Activities
             </li>
-            <li onClick={() => navigate("/winter/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/winter/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/winter/board")}>&raquo; Board</li>
+            <li
+              onClick={() => {
+                navigate("/winter/tip");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Tips
+            </li>
+            <li
+              onClick={() => {
+                navigate("/winter/gallery");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Gallery
+            </li>
+            <li
+              onClick={() => {
+                navigate("/winter/board");
+                handleHamburgerClose();
+              }}
+            >
+              &raquo; Board
+            </li>
           </ul>
         </li>
       </ul>

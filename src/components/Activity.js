@@ -1,29 +1,3 @@
-const festivalList = [
-  "Jinhae Cherry Blossom Festival",
-  "Yeouido Spring Flower Festival",
-  "400 Years of Injeolmi Festival",
-  "Goyang International Flower Festival",
-  "Jeju Wildfire Festival",
-  "Goryeo Mountain Azalea Festival",
-  "Jeju Canola Flower Festival",
-  "Seocheon Camellia Flower Webfoot Octopus Festival",
-  "Changwon Sea squirt Festival",
-  "Gwangyang Plum Blossom Festival",
-];
-
-const foodList = [
-  "Soy Sauce Marinated Crab",
-  "Wild vegetable bibimbap",
-  "Hwajeon",
-  "Bindaetteok",
-  "Rice with thistle",
-  "Naenginamul",
-  "Eggplant greens",
-  "Fish pancake",
-  "Raw octopus",
-  "Braised mackerel",
-];
-
 const ActivityContent = ({ type, contentList }) => {
   return (
     <div className={`activity-content activity-content-${type}`}>
@@ -69,13 +43,13 @@ const ActivityContent = ({ type, contentList }) => {
   );
 };
 
-const Activity = () => {
+const Activity = ({ festivalActivityList, foodActivityList }) => {
   return (
     <div className="activity">
       <h1>Festival</h1>
-      <ActivityContent type="festival" contentList={festivalList} />
+      <ActivityContent type="festival" contentList={festivalActivityList} />
       <h1>Food</h1>
-      <ActivityContent type="food" contentList={foodList} />
+      <ActivityContent type="food" contentList={foodActivityList} />
     </div>
   );
 };

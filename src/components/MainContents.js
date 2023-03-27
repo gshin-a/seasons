@@ -49,7 +49,7 @@ export const MainContent1 = ({ text, imgSrc, season }) => {
         <div className="maincontent1-left-article">{text}</div>
         <button
           className="maincontent1-left-button"
-          onClick={() => navigate(`/${season}`)}
+          onClick={() => navigate(`/${season}/intro`)}
         >
           &raquo; go to {season}
         </button>
@@ -68,7 +68,7 @@ export const MainContent2 = ({ text, imgSrc, season }) => {
         <div className="maincontent2-right-article">{text}</div>
         <button
           className="maincontent2-right-button"
-          onClick={() => navigate(`/${season}`)}
+          onClick={() => navigate(`/${season}/intro`)}
         >
           &raquo; go to {season}
         </button>

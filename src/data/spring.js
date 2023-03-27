@@ -1,3 +1,29 @@
+export const festivalActivityList = [
+  "Jinhae Cherry Blossom Festival",
+  "Yeouido Spring Flower Festival",
+  "400 Years of Injeolmi Festival",
+  "Goyang International Flower Festival",
+  "Jeju Wildfire Festival",
+  "Goryeo Mountain Azalea Festival",
+  "Jeju Canola Flower Festival",
+  "Seocheon Camellia Flower Webfoot Octopus Festival",
+  "Changwon Sea squirt Festival",
+  "Gwangyang Plum Blossom Festival",
+];
+
+export const foodActivityList = [
+  "Soy Sauce Marinated Crab",
+  "Wild vegetable bibimbap",
+  "Hwajeon",
+  "Bindaetteok",
+  "Rice with thistle",
+  "Naenginamul",
+  "Eggplant greens",
+  "Fish pancake",
+  "Raw octopus",
+  "Braised mackerel",
+];
+
 export const JejuGalleryList = [
   {
     id: 1,

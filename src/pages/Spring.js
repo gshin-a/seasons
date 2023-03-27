@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Introduction from "../components/Introduction";
+import { SpringIntroduction } from "../components/Introduction";
 import Activity from "./../components/Activity";
 import Tip from "./../components/Tip";
 import Gallery from "./../components/Gallery";
 import Board from "./../components/Board";
 import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
+import { festivalActivityList, foodActivityList } from "../data/spring";
 
 const Spring = ({ isDarkMode, setIsDarkMode }) => {
   const { state } = useParams();
@@ -31,7 +32,7 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
   }, []);
 
   return (
-    <div className={"spring" + (isDarkMode ? " spring-darkmode" : "")}>
+    <div className={"spring" + (isDarkMode ? " darkmode" : "")}>
       <Header
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
@@ -42,12 +43,15 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
       ) : (
         <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
       )}
-      <div className="spring-content">
-        <div className="spring-maincontent">
-          {springState === "intro" && (
-            <Introduction setSpringState={setSpringState} />
+      <div className="subpage-content">
+        <div className="subpage-maincontent">
+          {springState === "intro" && <SpringIntroduction />}
+          {springState === "activity" && (
+            <Activity
+              festivalActivityList={festivalActivityList}
+              foodActivityList={foodActivityList}
+            />
           )}
-          {springState === "activity" && <Activity />}
           {springState === "tip" && <Tip />}
           {springState === "gallery" && <Gallery />}
           {springState === "board" && <Board springPostData={springPostData} />}
