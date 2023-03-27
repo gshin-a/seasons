@@ -6,13 +6,14 @@ import Activity from "./../components/Activity";
 import Tip from "./../components/Tip";
 import Gallery from "./../components/Gallery";
 import Board from "./../components/Board";
-import Hamburger from "../components/Hamburger";
+import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
 
 const Spring = ({ isDarkMode, setIsDarkMode }) => {
   const { state } = useParams();
   const [springState, setSpringState] = useState(state ? state : "intro");
   const [springPostData, setSpringPostData] = useState([]);
+  const [openSidebar, setSidebar] = useState(false);
 
   useEffect(() => {
     setSpringState(state);
@@ -36,7 +37,11 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
         setIsDarkMode={setIsDarkMode}
         type="spring"
       />
-      <Hamburger />
+      {openSidebar ? (
+        <HamburgerSidebar handleHamburgerClose={() => setSidebar(false)} />
+      ) : (
+        <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
+      )}
       <div className="spring-content">
         <div className="spring-maincontent">
           {springState === "intro" && (

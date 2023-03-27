@@ -64,8 +64,6 @@ const GalleryItemRightButton = ({ type, galleryLength }) => {
           ".gallery-item-content"
         ).offsetWidth;
 
-        const totalWidth = galleryLength * contentWidth;
-
         const visibleWidth = document.querySelector(
           ".gallery-items-visible"
         ).offsetWidth;
@@ -88,6 +86,8 @@ const GalleryItemRightButton = ({ type, galleryLength }) => {
 
         currentMargin = document.querySelector(`.gallery-items-${type}`).style
           .marginLeft;
+
+        const totalWidth = document.querySelector(".gallery-items").offsetWidth;
 
         if (
           totalWidth - Math.abs(currentMargin.slice(0, -2)) - visibleWidth <=

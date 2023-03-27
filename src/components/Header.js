@@ -22,7 +22,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
           </Link>
         </li>
         <li className="header-nav-menu">
-          <Link to={"/spring"} className="header-nav-link">
+          <Link to={"/spring/intro"} className="header-nav-link">
             SPRING
           </Link>
           <ul className="header-nav-submenu">
@@ -38,7 +38,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
           </ul>
         </li>
         <li className="header-nav-menu">
-          <Link to={"/summer"} className="header-nav-link">
+          <Link to={"/summer/intro"} className="header-nav-link">
             SUMMER
           </Link>
           <ul className="header-nav-submenu">
@@ -54,7 +54,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
           </ul>
         </li>
         <li className="header-nav-menu">
-          <Link to={"/autumn"} className="header-nav-link">
+          <Link to={"/autumn/intro"} className="header-nav-link">
             AUTUMN
           </Link>
           <ul className="header-nav-submenu">
@@ -70,7 +70,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
           </ul>
         </li>
         <li className="header-nav-menu">
-          <Link to={"/winter"} className="header-nav-link">
+          <Link to={"/winter/intro"} className="header-nav-link">
             WINTER
           </Link>
           <ul className="header-nav-submenu">
