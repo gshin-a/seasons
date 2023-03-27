@@ -6,12 +6,17 @@ import Activity from "./../components/Activity";
 import Tip from "./../components/Tip";
 import Gallery from "./../components/Gallery";
 import Board from "./../components/Board";
-import Sidebar from "../components/Sidebar";
+import Hamburger from "../components/Hamburger";
+import { useParams } from "react-router-dom";
 
 const Spring = ({ isDarkMode, setIsDarkMode }) => {
-  const [springState, setSpringState] = useState("intro");
+  const { state } = useParams();
+  const [springState, setSpringState] = useState(state ? state : "intro");
   const [springPostData, setSpringPostData] = useState([]);
-  const [openSidebar, setOpenSidebar] = useState(true);
+
+  useEffect(() => {
+    setSpringState(state);
+  }, [state]);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -31,28 +36,9 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
         setIsDarkMode={setIsDarkMode}
         type="spring"
       />
-      {/* sidebar는 component에 넣어서 재사용가능할듯. `${type}-left-sidebar` 이런 식으로 사용하면 됨 */}
+      <Hamburger />
       <div className="spring-content">
-        {openSidebar ? (
-          <Sidebar
-            springState={springState}
-            setSpringState={setSpringState}
-            setOpenSidebar={setOpenSidebar}
-          />
-        ) : (
-          <button
-            className="sidebar-open-button"
-            onClick={() => setOpenSidebar(true)}
-          >
-            open sidebar
-          </button>
-        )}
-        <div
-          className={
-            "spring-maincontent" +
-            (openSidebar ? "" : " spring-maincontent-fullscreen")
-          }
-        >
+        <div className="spring-maincontent">
           {springState === "intro" && (
             <Introduction setSpringState={setSpringState} />
           )}

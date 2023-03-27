@@ -22,9 +22,21 @@ function App() {
             }
           />
           <Route
+            path="/spring/:state"
+            element={
+              <Spring isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            }
+          />
+          <Route
             path="/spring"
             element={
               <Spring isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            }
+          />
+          <Route
+            path="/summer/:state"
+            element={
+              <Summer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             }
           />
           <Route
@@ -32,11 +44,23 @@ function App() {
             element={
               <Summer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             }
+          />{" "}
+          <Route
+            path="/autumn/:state"
+            element={
+              <Autumn isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            }
           />
           <Route
             path="/autumn"
             element={
               <Autumn isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            }
+          />
+          <Route
+            path="/winter/:state"
+            element={
+              <Winter isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             }
           />
           <Route

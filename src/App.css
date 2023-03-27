@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-darkmode {
@@ -25,7 +25,7 @@
 }
 
 .header:hover {
-  background-color: rgba(247, 247, 244, 0.8);
+  background-color: rgba(247, 247, 244, 1);
 }
 
 .header-spring {
@@ -42,6 +42,10 @@
 }
 
 .header-darkmode:hover {
+  background-color: rgba(75, 74, 74, 1);
+}
+
+.spring-darkmode .header-spring:hover {
   background-color: rgba(75, 74, 74, 1);
 }
 
@@ -62,12 +66,19 @@
   align-items: center;
 }
 
-.header-nav a {
+.header-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-nav-link {
   padding: 0 50px;
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-weight: bold;
+  z-index: 2;
 }
 
 .header-darkmode .header-nav a {
@@ -108,6 +119,100 @@
 .header-darkmode .header-button button {
   color: white;
   border-color: white;
+}
+
+.header-nav-submenu {
+  display: none;
+  position: fixed;
+  list-style: none;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(247, 247, 244, 1);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.header-nav-submenu li {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+  cursor: pointer;
+}
+
+.header-nav-menu:hover > .header-nav-submenu {
+  display: block;
+}
+
+.spring .header-nav-submenu {
+  background-color: pink;
+}
+
+.header-nav-submenu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-darkmode {
+  color: white;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.spring .hamburger {
+  position: sticky;
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.spring .hamburger:hover {
+  position: sticky;
+  background-color: pink;
+}
+
+.spring-darkmode .hamburger {
+  background-color: rgba(75, 74, 74, 0.8);
+}
+
+.spring-darkmode .hamburger:hover {
+  background-color: rgba(75, 74, 74, 1);
+}
+
+.header-spring:hover {
+  background-color: pink;
+}
+
+.hamburger:hover {
+  background-color: rgba(247, 247, 244, 0.8);
+}
+
+@media (max-width: 1200px) {
+  .hamburger {
+    display: flex;
+  }
+  .header {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -447,17 +552,12 @@
 }
 
 .spring-maincontent {
-  margin-left: 25vw;
+  margin-left: 5vw;
   margin-right: 5vw;
-  width: 65vw;
+  width: 100vw;
   min-width: 600px;
   margin-top: 50px;
   margin-bottom: 100px;
-}
-
-.spring-maincontent-fullscreen {
-  margin-left: 5vw;
-  width: 100vw;
 }
 
 .sidebar-open-button {
@@ -936,7 +1036,6 @@
 }
 
 .tip-content {
-  height: 20vh;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-right: 20px;
@@ -1088,6 +1187,7 @@
   margin-right: 20px;
   border-right: 2px solid pink;
   padding-right: 15px;
+  white-space: nowrap;
 }
 
 .spring-darkmode .board-item-post-postnumber {
@@ -1096,11 +1196,16 @@
 
 .board-item-post-title {
   flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 20px;
 }
 
 .board-item-post-user {
   border-left: 2px solid pink;
   padding-left: 15px;
+  white-space: nowrap;
 }
 
 .spring-darkmode .board-item-post-user {
