@@ -148,6 +148,10 @@
   background-color: pink;
 }
 
+.header-darkmode .header-nav-submenu {
+  background-color: rgba(75, 74, 74, 1);
+}
+
 .header-nav-submenu a {
   text-decoration: none;
   color: black;
@@ -218,6 +222,10 @@
 
 .spring .hamburger-sidebar {
   background-color: pink;
+}
+
+.spring-darkmode .hamburger-sidebar {
+  background-color: rgba(75, 74, 74, 1);
 }
 
 .hamburger-nav {
@@ -1014,6 +1022,7 @@
   margin-right: 20px;
   display: flex;
   border-bottom: 2px solid rgba(255, 192, 203, 0.6);
+  min-height: 200px;
 }
 
 .tip-content img {
@@ -1068,6 +1077,7 @@
   display: flex;
   width: 10000px;
   height: 100%;
+  transition: margin 0.5s ease;
 }
 
 .gallery-item-content {
