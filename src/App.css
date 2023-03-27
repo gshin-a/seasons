@@ -448,15 +448,15 @@
 
 .spring-maincontent {
   margin-left: 25vw;
-  margin-right: 10vw;
-  width: 60vw;
+  margin-right: 5vw;
+  width: 65vw;
   min-width: 600px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .spring-maincontent-fullscreen {
-  margin-left: 10vw;
+  margin-left: 5vw;
   width: 100vw;
 }
 
@@ -981,26 +981,73 @@
 
 .gallery-item-wrapper {
   display: flex;
-  height: 20vh;
+  height: 25vh;
   align-items: center;
 }
 
 .gallery-items-visible {
   flex-grow: 1;
   overflow: hidden;
+  height: 100%;
+  display: flex;
 }
 
 .gallery-items {
   display: flex;
   width: 10000px;
+  height: 100%;
 }
 
 .gallery-item-content {
-  width: 15vw;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gallery-item-content img {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.gallery-description {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 .gallery-item-left-button {
   visibility: hidden;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(255, 192, 203, 0.5);
+  border-radius: 50%;
+}
+
+.gallery-item-left-button:hover {
+  transform: scale(1.5);
+}
+
+.gallery-item-right-button {
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(255, 192, 203, 0.5);
+  border-radius: 50%;
+}
+
+.gallery-item-right-button:hover {
+  transform: scale(1.5);
 }
 
 /* Board */

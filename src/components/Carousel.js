@@ -9,7 +9,7 @@ const CarouselButton = ({ handleCarousel, setAutoslide, autoslide }) => {
           setAutoslide(!autoslide);
         }}
       >
-        {autoslide ? "auto slide on" : "auto slide off"}
+        {autoslide ? "auto slide off" : "auto slide on"}
       </button>
       <button
         onClick={() => {
