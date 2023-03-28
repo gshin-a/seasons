@@ -23,14 +23,14 @@ const MainContentImageCarousel = ({ imgSrc, type }) => {
         }
       >
         <button
-          className={imgSrcNumState < 1 ? "button-hidden" : ""}
+          className={imgSrcNumState < 1 ? "button-disable" : ""}
           onClick={handlePrevImgSrc}
         >
           &laquo; prev
         </button>
 
         <button
-          className={imgSrcNumState > imgSrc.length - 2 ? "button-hidden" : ""}
+          className={imgSrcNumState > imgSrc.length - 2 ? "button-disable" : ""}
           onClick={handleNextImgSrc}
         >
           next &raquo;
@@ -62,7 +62,7 @@ export const MainContent1 = ({ text, imgSrc, season }) => {
 export const MainContent2 = ({ text, imgSrc, season }) => {
   const navigate = useNavigate();
   return (
-    <div className="maincontent">
+    <div className="maincontent2">
       <MainContentImageCarousel imgSrc={imgSrc} type={2} />
       <div className="maincontent2-right">
         <div className="maincontent2-right-article">{text}</div>

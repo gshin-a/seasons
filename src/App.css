@@ -77,6 +77,7 @@
   font-size: 30px;
   font-weight: bold;
   cursor: default;
+  white-space: nowrap;
 }
 
 .header-nav {
@@ -94,7 +95,7 @@
 }
 
 .header-nav-link {
-  padding: 0 50px;
+  padding: 0 3vw;
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -131,6 +132,7 @@
 .header-button button {
   cursor: pointer;
   background: none;
+  z-index: 2;
 }
 
 .header-button button:hover {
@@ -159,6 +161,7 @@
   padding-bottom: 5px;
   border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .header-nav-menu:hover > .header-nav-submenu {
@@ -265,6 +268,7 @@
   background-color: rgba(247, 247, 244, 1);
   overflow: auto;
   z-index: 3;
+  display: none;
 }
 
 .spring .hamburger-sidebar {
@@ -324,21 +328,6 @@
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-  .hamburger {
-    display: flex;
-  }
-  .header {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .hamburger-sidebar {
-    width: 100%;
-  }
-}
-
 /* Footer */
 
 .footer {
@@ -349,6 +338,7 @@
   padding-bottom: 30px;
   padding-top: 30px;
   background-color: rgba(247, 247, 244, 0.7);
+  text-align: center;
 }
 
 .home-darkmode .footer {
@@ -431,6 +421,7 @@
 .carousel-image-spring {
   background-image: url("C:\seasons\seasons\public\assets\carousel-spring.jpg");
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -441,6 +432,7 @@
 .carousel-image-summer {
   background-image: url("C:\seasons\seasons\public\assets\carousel-summer.jpg");
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -451,6 +443,7 @@
 .carousel-image-autumn {
   background-image: url("C:\seasons\seasons\public\assets\carousel-autumn.jpg");
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -461,6 +454,7 @@
 .carousel-image-winter {
   background-image: url("C:\seasons\seasons\public\assets\carousel-winter.jpg");
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -525,6 +519,11 @@
 /* MainContent */
 
 .maincontent {
+  height: 100vh;
+  display: flex;
+}
+
+.maincontent2 {
   height: 100vh;
   display: flex;
 }
@@ -659,8 +658,13 @@
   color: rgb(137, 155, 241);
 }
 
-.button-hidden {
-  visibility: hidden;
+.button-disable {
+  pointer-events: none;
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.home-darkmode .maincontent1-right-button .button-disable {
+  color: rgba(128, 128, 128, 1);
 }
 
 /* common */
@@ -679,7 +683,6 @@
   margin-left: 5vw;
   margin-right: 5vw;
   width: 100vw;
-  min-width: 600px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -1123,6 +1126,10 @@
 
 /* Gallery */
 
+.gallery {
+  max-width: 90vw;
+}
+
 .gallery-item {
   width: 100%;
   margin-bottom: 100px;
@@ -1156,7 +1163,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -1215,12 +1221,20 @@
 /* Board */
 
 .board {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.board-search {
+  margin-bottom: 20px;
+}
+
+.board-inputwrapper {
+  position: relative;
+  width: fit-content;
 }
 
 .board input {
-  margin-bottom: 20px;
   outline: none;
 }
 
@@ -1228,6 +1242,9 @@
   background: none;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 
 .darkmode .board-input-resetbutton {
@@ -1309,4 +1326,183 @@
 
 .board-item-content-display {
   display: block;
+}
+
+/* 반응형 */
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: flex;
+  }
+  .header {
+    display: none;
+  }
+
+  .hamburger-sidebar {
+    display: block;
+  }
+  .maincontent {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .maincontent1-left {
+    width: 100%;
+    height: auto;
+  }
+  .maincontent1-left-article {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+  .maincontent1-left-button {
+    margin-left: 5vw;
+  }
+  .maincontent1-right {
+    width: 100%;
+    height: 100vw;
+  }
+  .maincontent1-right img {
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  .maincontent1-right-button {
+    padding-right: 0;
+  }
+  .maincontent2 {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .maincontent2-left {
+    width: 100%;
+    height: 100vw;
+  }
+  .maincontent2-left img {
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  .maincontent2-left-button {
+    padding-left: 0;
+  }
+  .maincontent2-right {
+    width: 100%;
+    height: auto;
+  }
+  .maincontent2-right-article {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+  .maincontent2-right-button {
+    margin-left: 5vw;
+  }
+  .carousel-button {
+    gap: 5vh;
+    width: 20vw;
+  }
+  .carousel-button button {
+    font-size: 20px;
+  }
+  .carousel-button .carousel-button-autoslide {
+    font-size: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger-sidebar {
+    width: 100%;
+  }
+
+  .subpage-maincontent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .intro {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .activity {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .tip {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+  }
+  .board {
+    width: auto;
+  }
+
+  .activity {
+    padding: 0;
+  }
+  .activity-content {
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+  }
+  .activity-content-up-left {
+    display: block;
+    height: auto;
+  }
+  .activity-content-1 {
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+  .activity-content-up-right {
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+  .activity-content-down-left {
+    display: block;
+    height: auto;
+  }
+  .activity-content-down-right {
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+  .activity-content-10 {
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+  .tip-content {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+  .tip-content img {
+    width: 80vw;
+    height: 80vw;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    min-height: 0;
+  }
+  .tip-content-text {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+  .gallery-item h2 {
+    margin-left: 5vw;
+  }
+  .gallery-item-content {
+    width: 70vw;
+    max-width: 250px;
+  }
+  .board-item-post {
+    font-size: 15px;
+    padding: 5%;
+  }
+  .board-item-post-postnumber {
+    margin-right: 2vw;
+    padding-right: 2vw;
+  }
+  .board-item-post-title {
+    margin-right: 2vw;
+  }
+  .board-item-post-user {
+    padding-left: 2vw;
+  }
 }

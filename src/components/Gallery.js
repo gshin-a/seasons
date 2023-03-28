@@ -29,7 +29,7 @@ const GalleryItemLeftButton = ({ type }) => {
         let currentMargin = document.querySelector(`.gallery-items-${type}`)
           .style.marginLeft;
         const newMargin =
-          parseInt(contentWidth) + parseInt(currentMargin.slice(0, -2));
+          parseInt(contentWidth) + parseInt(currentMargin.slice(0, -2)) + 10;
 
         document.querySelector(
           `.gallery-items-${type}`
@@ -77,7 +77,7 @@ const GalleryItemRightButton = ({ type, galleryLength }) => {
           ).style.marginLeft = `-${contentWidth}px`;
         } else {
           const newMargin =
-            parseInt(currentMargin.slice(0, -2)) - parseInt(contentWidth);
+            parseInt(currentMargin.slice(0, -2)) - parseInt(contentWidth) - 10;
 
           document.querySelector(
             `.gallery-items-${type}`

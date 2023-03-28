@@ -26,16 +26,20 @@ const Board = ({ springPostData }) => {
 
   return (
     <div className="board">
-      Search{" "}
-      <input onChange={(e) => setFilter(e.target.value)} value={filter} />
-      <button
-        className="board-input-resetbutton"
-        onClick={() => {
-          setFilter("");
-        }}
-      >
-        X
-      </button>
+      <div className="board-search">
+        Search{" "}
+        <div className="board-inputwrapper">
+          <input onChange={(e) => setFilter(e.target.value)} value={filter} />
+          <button
+            className="board-input-resetbutton"
+            onClick={() => {
+              setFilter("");
+            }}
+          >
+            X
+          </button>
+        </div>
+      </div>
       {springPostData.map(
         (e) =>
           e.title.indexOf(filter) !== -1 && (
