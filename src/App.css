@@ -418,6 +418,10 @@
   overflow: hidden;
 }
 
+.carousel-image-wrapper {
+  position: relative;
+}
+
 .carousel-image-spring {
   background-image: url("C:\seasons\seasons\public\assets\carousel-spring.jpg");
   background-size: cover;
@@ -425,8 +429,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  left: -300vw;
-  transition: all ease 2s;
+  left: 0vw;
 }
 
 .carousel-image-summer {
@@ -436,8 +439,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  left: -200vw;
-  transition: all ease 2s;
+  left: 100vw;
 }
 
 .carousel-image-autumn {
@@ -447,8 +449,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  left: -100vw;
-  transition: all ease 2s;
+  left: 200vw;
 }
 
 .carousel-image-winter {
@@ -458,19 +459,44 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  left: 0vw;
-  transition: all ease 2s;
+  left: 300vw;
 }
 
-.carousel-image-spring-visible {
-  margin-left: 300vw;
+.carousel-image-fake-spring {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-spring.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 400vw;
 }
-
-.carousel-image-summer-visible {
-  margin-left: 200vw;
+.carousel-image-fake-summer {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-summer.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 500vw;
 }
-.carousel-image-autumn-visible {
-  margin-left: 100vw;
+.carousel-image-fake-autumn {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-autumn.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 600vw;
+}
+.carousel-image-fake-winter {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-winter.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 700vw;
 }
 
 .home-darkmode .carousel-image-spring {
@@ -486,6 +512,21 @@
 }
 
 .home-darkmode .carousel-image-winter {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-winter-darkmode.jpg");
+}
+.home-darkmode .carousel-image-fake-spring {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-spring-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-fake-summer {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-summer-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-fake-autumn {
+  background-image: url("C:\seasons\seasons\public\assets\carousel-autumn-darkmode.jpg");
+}
+
+.home-darkmode .carousel-image-fake-winter {
   background-image: url("C:\seasons\seasons\public\assets\carousel-winter-darkmode.jpg");
 }
 

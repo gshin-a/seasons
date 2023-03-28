@@ -43,62 +43,146 @@ const CarouselButton = ({ handleCarousel, setAutoslide, autoslide }) => {
   );
 };
 
-const carouselStateList = {
-  0: " carousel-image-spring-visible",
-  1: " carousel-image-summer-visible",
-  2: " carousel-image-autumn-visible",
-  3: "",
+const delay = (res) => {
+  return new Promise((res) => {
+    setTimeout(() => {
+      res();
+    }, 2000);
+  });
 };
 
 const Carousel = ({ isDarkMode }) => {
-  const [carouselState, setCarouselState] = useState(carouselStateList[0]);
+  const [curImg, setCurImg] = useState(0);
   const [autoslide, setAutoslide] = useState(true);
 
-  const handleCarousel = (imgNum) => {
-    setCarouselState(carouselStateList[imgNum]);
+  const handleCarousel = async (imgNum) => {
+    let newCurImg = imgNum;
+    if (curImg < imgNum) {
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "margin 2s ease";
+      document.querySelector(".carousel-image-wrapper").style.marginLeft = `-${
+        imgNum * 100
+      }vw`;
+      newCurImg = imgNum;
+    } else if (curImg > imgNum) {
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "margin 2s ease";
+      document.querySelector(".carousel-image-wrapper").style.marginLeft = `-${
+        (imgNum + 4) * 100
+      }vw`;
+      newCurImg = imgNum + 4;
+    } else {
+      console.log("같은 이미지입니다.");
+      return;
+    }
+
+    await delay();
+    if (newCurImg >= 4) {
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "none";
+      document.querySelector(".carousel-image-wrapper").style.marginLeft = `-${
+        (newCurImg - 4) * 100
+      }vw`;
+      newCurImg = newCurImg - 4;
+    }
+    setCurImg(newCurImg);
+  };
+
+  const autoHandleCarousel = async (imgNum) => {
+    if (imgNum !== 0) {
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "margin 2s ease";
+      document.querySelector(".carousel-image-wrapper").style.marginLeft = `-${
+        imgNum * 100
+      }vw`;
+    } else {
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "margin 2s ease";
+      document.querySelector(
+        ".carousel-image-wrapper"
+      ).style.marginLeft = `-400vw`;
+      await delay();
+      document.querySelector(".carousel-image-wrapper").style.transition =
+        "none";
+      document.querySelector(
+        ".carousel-image-wrapper"
+      ).style.marginLeft = `0vw`;
+    }
   };
 
   useEffect(() => {
     if (autoslide) {
-      let i = 0;
+      handleCarousel(0);
+      let i = 1;
       const showCarousel = setInterval(() => {
-        handleCarousel(i);
+        autoHandleCarousel(i);
+        setCurImg(i);
         if (i === 3) i = 0;
         else i++;
-      }, 4000);
+      }, 3000);
       return () => clearInterval(showCarousel);
     }
   }, [autoslide]);
 
   return (
     <div className={"carousel" + (isDarkMode ? " carousel-darkmode" : "")}>
-      <div className={"carousel-image-spring" + carouselState}>
-        <CarouselButton
-          handleCarousel={handleCarousel}
-          setAutoslide={setAutoslide}
-          autoslide={autoslide}
-        />
-      </div>
-      <div className={"carousel-image-summer" + carouselState}>
-        <CarouselButton
-          handleCarousel={handleCarousel}
-          setAutoslide={setAutoslide}
-          autoslide={autoslide}
-        />
-      </div>
-      <div className={"carousel-image-autumn" + carouselState}>
-        <CarouselButton
-          handleCarousel={handleCarousel}
-          setAutoslide={setAutoslide}
-          autoslide={autoslide}
-        />
-      </div>
-      <div className={"carousel-image-winter" + carouselState}>
-        <CarouselButton
-          handleCarousel={handleCarousel}
-          setAutoslide={setAutoslide}
-          autoslide={autoslide}
-        />
+      <div className="carousel-image-wrapper">
+        <div className={"carousel-image-spring"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-summer"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-autumn"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-winter"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-fake-spring"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-fake-summer"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-fake-autumn"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
+        <div className={"carousel-image-fake-winter"}>
+          <CarouselButton
+            handleCarousel={handleCarousel}
+            setAutoslide={setAutoslide}
+            autoslide={autoslide}
+          />
+        </div>
       </div>
     </div>
   );
