@@ -1469,12 +1469,16 @@
     margin-right: 5vw;
   }
   .tip {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     margin-left: 5vw;
     margin-right: 5vw;
-    display: block;
   }
   .board {
-    width: auto;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .activity {
@@ -1520,6 +1524,7 @@
     margin-bottom: 20px;
     margin-top: 10px;
     min-height: 0;
+    margin-right: 0;
   }
   .tip-content-text {
     width: 80vw;
