@@ -72,7 +72,6 @@ const Carousel = ({ isDarkMode }) => {
       }vw`;
       newCurImg = imgNum + 4;
     } else {
-      console.log("같은 이미지입니다.");
       return;
     }
 
