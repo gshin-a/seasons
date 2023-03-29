@@ -24,6 +24,65 @@ export const foodActivityList = [
   "Bulgogi",
 ];
 
+export const tipList = [
+  {
+    imgNum: 1,
+    title: "Visit a traditional market",
+    description:
+      "Autumn is harvest time in Korea, and traditional markets are filled with fresh produce, seafood, and other seasonal delicacies.",
+    link: "https://english.visitkorea.or.kr/enu/SHP/SH_ENG_2_6.jsp",
+  },
+  {
+    imgNum: 2,
+    title: "Take a hike",
+    description:
+      "Hiking is a popular pastime in Korea, and there are many beautiful trails to explore in the autumn months.",
+    link: "https://www.alltrails.com/south-korea",
+  },
+  {
+    imgNum: 3,
+    title: "Try some seasonal foods",
+    description:
+      "From sweet potato latte to chestnut cakes, autumn in Korea is filled with delicious seasonal treats.",
+    link: "https://thewingedfork.com/top-korean-autumn-foods/",
+  },
+  {
+    imgNum: 4,
+    title: "Enjoy the foliage",
+    description:
+      "From Gyeongju to Jeju Island, there are many spots in Korea that are known for their stunning autumn foliage.",
+    link: "https://www.koreatodo.com/top-autumn-foliage-sites-korea",
+  },
+  {
+    imgNum: 5,
+    title: "Visit a tea plantation",
+    description:
+      "Korea is famous for its tea, and there are many tea plantations to visit in the autumn months. Enjoy a cup of tea while taking in the stunning scenery.",
+    link: "https://theculturetrip.com/asia/south-korea/articles/why-you-need-to-visit-the-largest-tea-plantation-in-south-korea/",
+  },
+  {
+    imgNum: 6,
+    title: "Take a road trip",
+    description:
+      "With so many scenic routes to explore, autumn is the perfect time to take a road trip in Korea. Rent a car and hit the open road, taking in the stunning autumn colors along the way.",
+    link: "https://ginabearsblog.com/the-best-fall-road-trips-in-korea/",
+  },
+  {
+    imgNum: 7,
+    title: "Visit a traditional Korean garden",
+    description:
+      "Korean gardens are known for their beauty, and autumn is a great time to visit one. Admire the vibrant fall colors while taking in the tranquility of a traditional Korean garden.",
+    link: "https://www.lonelyplanet.com/articles/south-koreas-beautiful-gardens-landscape-design",
+  },
+  {
+    imgNum: 8,
+    title: "Go camping",
+    description:
+      "The cooler temperatures and colorful scenery make for a perfect camping experience.",
+    link: "https://en.yna.co.kr/view/AEN20181029005000315",
+  },
+];
+
 export const JejuGalleryList = [
   {
     id: 1,

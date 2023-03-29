@@ -8,7 +8,11 @@ import Gallery from "./../components/Gallery";
 import Board from "./../components/Board";
 import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
-import { festivalActivityList, foodActivityList } from "../data/spring";
+import {
+  festivalActivityList,
+  foodActivityList,
+  tipList,
+} from "../data/spring";
 
 const Spring = ({ isDarkMode, setIsDarkMode }) => {
   const { state } = useParams();
@@ -53,7 +57,7 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
               season="spring"
             />
           )}
-          {springState === "tip" && <Tip />}
+          {springState === "tip" && <Tip tipList={tipList} season="spring" />}
           {springState === "gallery" && <Gallery />}
           {springState === "board" && <Board springPostData={springPostData} />}
         </div>

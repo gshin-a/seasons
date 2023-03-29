@@ -1064,6 +1064,7 @@
 .tip {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   border-top: 2px solid rgba(255, 192, 203, 0.6);
   margin: 20px;
 }
@@ -1080,7 +1081,6 @@
   margin-right: 20px;
   display: flex;
   border-bottom: 2px solid rgba(255, 192, 203, 0.6);
-  min-height: 200px;
 }
 .summer .tip-content {
   border-bottom: 2px solid rgba(115, 196, 228, 0.6);
@@ -1094,6 +1094,7 @@
   margin-right: 5%;
   border-radius: 5px;
   object-fit: cover;
+  min-height: 200px;
 }
 
 .tip-content-text {
