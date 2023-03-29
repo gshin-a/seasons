@@ -1439,7 +1439,7 @@
     min-height: 0;
     height: auto;
   }
-  .activity-content-up-left {
+  .activity-content-up {
     display: block;
     height: auto;
   }
@@ -1451,11 +1451,11 @@
     height: 80vw;
     margin-bottom: 30px;
   }
-  .activity-content-down-left {
+  .activity-content-down {
     display: block;
     height: auto;
   }
-  .activity-content-down-right {
+  .activity-content-down-left {
     height: 80vw;
     margin-bottom: 30px;
   }
