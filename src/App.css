@@ -757,7 +757,7 @@
   margin-bottom: 100px;
 }
 
-.activity-content-up-left {
+.activity-content-up {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 49.5%;
@@ -782,7 +782,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-1.jpg");
   background-size: cover;
   background-position: center;
 
@@ -796,6 +795,7 @@
 .activity-content-up-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   height: 100%;
   gap: 10px;
 }
@@ -817,7 +817,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-2.jpg");
   background-size: cover;
   background-position: center;
 
@@ -845,7 +844,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-3.jpg");
   background-size: cover;
   background-position: center;
 
@@ -873,7 +871,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-4.jpg");
   background-size: cover;
   background-position: center;
 
@@ -901,7 +898,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-5.jpg");
   background-size: cover;
   background-position: center;
 
@@ -912,7 +908,7 @@
   transform: scale(1.1);
 }
 
-.activity-content-down-left {
+.activity-content-down {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 49.5%;
@@ -920,9 +916,10 @@
   margin-bottom: 1%;
 }
 
-.activity-content-down-right {
+.activity-content-down-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   height: 100%;
   gap: 10px;
 }
@@ -944,7 +941,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-6.jpg");
   background-size: cover;
   background-position: center;
 
@@ -972,7 +968,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-7.jpg");
   background-size: cover;
   background-position: center;
 
@@ -1000,7 +995,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-8.jpg");
   background-size: cover;
   background-position: center;
 
@@ -1028,7 +1022,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-9.jpg");
   background-size: cover;
   background-position: center;
 
@@ -1056,7 +1049,6 @@
   justify-content: center;
   text-align: center;
 
-  background-image: url("/public/assets/activity-content-10.jpg");
   background-size: cover;
   background-position: center;
 
@@ -1065,46 +1057,6 @@
 
 .activity-content-10-image:hover {
   transform: scale(1.1);
-}
-
-.activity-content-food .activity-content-1-image {
-  background-image: url("/public/assets/activity-food-content-1.jpg");
-}
-
-.activity-content-food .activity-content-2-image {
-  background-image: url("/public/assets/activity-food-content-2.jpg");
-}
-
-.activity-content-food .activity-content-3-image {
-  background-image: url("/public/assets/activity-food-content-3.jpg");
-}
-
-.activity-content-food .activity-content-4-image {
-  background-image: url("/public/assets/activity-food-content-4.jpg");
-}
-
-.activity-content-food .activity-content-5-image {
-  background-image: url("/public/assets/activity-food-content-5.jpg");
-}
-
-.activity-content-food .activity-content-6-image {
-  background-image: url("/public/assets/activity-food-content-6.jpg");
-}
-
-.activity-content-food .activity-content-7-image {
-  background-image: url("/public/assets/activity-food-content-7.jpg");
-}
-
-.activity-content-food .activity-content-8-image {
-  background-image: url("/public/assets/activity-food-content-8.jpg");
-}
-
-.activity-content-food .activity-content-9-image {
-  background-image: url("/public/assets/activity-food-content-9.jpg");
-}
-
-.activity-content-food .activity-content-10-image {
-  background-image: url("/public/assets/activity-food-content-10.jpg");
 }
 
 /* Tip */
@@ -1223,12 +1175,14 @@
 }
 
 .gallery-item-left-button {
-  visibility: hidden;
   border: none;
   font-weight: bold;
   font-size: 20px;
   background-color: rgba(255, 192, 203, 0.5);
   border-radius: 50%;
+
+  pointer-events: none;
+  opacity: 0.5;
 }
 .summer .gallery-item-left-button {
   background-color: rgba(115, 196, 228, 0.5);

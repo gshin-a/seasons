@@ -50,6 +50,7 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
             <Activity
               festivalActivityList={festivalActivityList}
               foodActivityList={foodActivityList}
+              season="spring"
             />
           )}
           {springState === "tip" && <Tip />}

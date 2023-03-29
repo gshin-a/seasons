@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 const MainContentImageCarousel = ({ imgSrc, type }) => {
   const [imgSrcNumState, setImgSrcNumState] = useState(0);
@@ -41,11 +42,12 @@ const MainContentImageCarousel = ({ imgSrc, type }) => {
 };
 
 export const MainContent1 = ({ text, imgSrc, season }) => {
+  const animatedItem = useScrollFadeIn();
   const navigate = useNavigate();
 
   return (
     <div className="maincontent">
-      <div className="maincontent1-left">
+      <div className="maincontent1-left" {...animatedItem}>
         <div className="maincontent1-left-article">{text}</div>
         <button
           className="maincontent1-left-button"
@@ -60,11 +62,12 @@ export const MainContent1 = ({ text, imgSrc, season }) => {
 };
 
 export const MainContent2 = ({ text, imgSrc, season }) => {
+  const animatedItem = useScrollFadeIn();
   const navigate = useNavigate();
   return (
     <div className="maincontent2">
       <MainContentImageCarousel imgSrc={imgSrc} type={2} />
-      <div className="maincontent2-right">
+      <div className="maincontent2-right" {...animatedItem}>
         <div className="maincontent2-right-article">{text}</div>
         <button
           className="maincontent2-right-button"

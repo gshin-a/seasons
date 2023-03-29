@@ -20,7 +20,10 @@ const GalleryItemLeftButton = ({ type }) => {
       onClick={(e) => {
         document.querySelector(
           `.gallery-item-right-button-${type}`
-        ).style.visibility = "visible";
+        ).style.pointerEvents = "all";
+        document.querySelector(
+          `.gallery-item-right-button-${type}`
+        ).style.opacity = "1";
 
         const contentWidth = document.querySelector(
           ".gallery-item-content"
@@ -34,15 +37,13 @@ const GalleryItemLeftButton = ({ type }) => {
         document.querySelector(
           `.gallery-items-${type}`
         ).style.marginLeft = `${newMargin}px`;
-        if (parseInt(currentMargin.slice(0, -2)) < contentWidth) {
-          e.target.visibility = "hidden";
-        }
 
         currentMargin = document.querySelector(`.gallery-items-${type}`).style
           .marginLeft;
 
         if (parseInt(currentMargin.slice(0, -2)) >= 0) {
-          e.target.style.visibility = "hidden";
+          e.target.style.pointerEvents = "none";
+          e.target.style.opacity = "0.5";
         }
       }}
     >
@@ -58,7 +59,10 @@ const GalleryItemRightButton = ({ type, galleryLength }) => {
       onClick={(e) => {
         document.querySelector(
           `.gallery-item-left-button-${type}`
-        ).style.visibility = "visible";
+        ).style.pointerEvents = "all";
+        document.querySelector(
+          `.gallery-item-left-button-${type}`
+        ).style.opacity = "1";
 
         const contentWidth = document.querySelector(
           ".gallery-item-content"
@@ -93,7 +97,8 @@ const GalleryItemRightButton = ({ type, galleryLength }) => {
           totalWidth - Math.abs(currentMargin.slice(0, -2)) - visibleWidth <=
           0
         ) {
-          e.target.style.visibility = "hidden";
+          e.target.style.pointerEvents = "none";
+          e.target.style.opacity = "0.5";
         }
       }}
     >
