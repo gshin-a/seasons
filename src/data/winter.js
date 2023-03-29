@@ -62,23 +62,23 @@ export const tipList = [
   },
   {
     imgNum: 6,
-    title: "Participate in outdoor activities",
+    title: "Visit a ski resort",
     description:
-      "Enjoy outdoor activities like hiking, cycling, and picnicking in Korean parks and riverside areas during warm spring",
+      "Korea has many excellent ski resorts, such as Yongpyong Ski Resort and Alpensia Ski Resort. Hit the slopes and enjoy the thrill of skiing or snowboarding.",
     link: "",
   },
   {
     imgNum: 7,
-    title: "Try local spring fruits",
+    title: "Try Korean hot pot",
     description:
-      "Spring is a great season for fresh fruits in Korea, such as strawberries. Try visiting a local market to try some of fresh produce.",
+      "Korean hot pot, or jjigae, is a hearty and comforting dish that's perfect for the winter months. Warm up with a bowl of hot, spicy stew.",
     link: "",
   },
   {
     imgNum: 8,
-    title: "Attend festivals and events",
+    title: "Visit indoor attractions",
     description:
-      "Spring in Korea is a season for various festivals and events. There are blossom festivals, temple stay, and traditional cultural performances.",
+      "Consider visiting indoor attractions like museums, art galleries, or indoor theme parks.",
     link: "",
   },
 ];
