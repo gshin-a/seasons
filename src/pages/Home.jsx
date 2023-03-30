@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import Footer from "../components/Footer";
-import { MainContent1, MainContent2 } from "./../components/MainContents";
+import { MainContent1, MainContent2 } from "../components/MainContents";
 import {
   springText,
   summerText,

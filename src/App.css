@@ -1075,6 +1075,10 @@
   border-top: 2px solid rgba(255, 69, 0, 0.6);
 }
 
+.winter .tip {
+  border-top: 2px solid rgba(0, 255, 255, 0.6);
+}
+
 .tip-content {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1087,6 +1091,10 @@
 }
 .autumn .tip-content {
   border-bottom: 2px solid rgba(255, 69, 0, 0.6);
+}
+
+.winter .tip-content {
+  border-bottom: 2px solid rgba(0, 255, 255, 0.6);
 }
 
 .tip-content img {
@@ -1191,6 +1199,9 @@
 .autumn .gallery-item-left-button {
   background-color: rgba(255, 69, 0, 0.5);
 }
+.winter .gallery-item-left-button {
+  background-color: rgba(0, 255, 255, 0.6);
+}
 
 .gallery-item-left-button:hover {
   transform: scale(1.5);
@@ -1208,6 +1219,9 @@
 }
 .autumn .gallery-item-right-button {
   background-color: rgba(255, 69, 0, 0.5);
+}
+.winter .gallery-item-right-button {
+  background-color: rgba(0, 255, 255, 0.6);
 }
 
 .gallery-item-right-button:hover {
@@ -1260,6 +1274,9 @@
 .autumn .board-item-post {
   background-color: rgba(255, 69, 0, 0.3);
 }
+.winter .board-item-post {
+  background-color: rgba(0, 255, 255, 0.6);
+}
 
 .board-item-post-postnumber {
   margin-right: 20px;
@@ -1272,6 +1289,9 @@
 }
 .autumn .board-item-post-postnumber {
   border-right: 2px solid rgb(245, 123, 79);
+}
+.winter .board-item-post-postnumber {
+  border-right: 2px solid aqua;
 }
 
 .darkmode .board-item-post-postnumber {
@@ -1297,6 +1317,9 @@
 .autumn .board-item-post-user {
   border-left: 2px solid rgb(245, 123, 79);
 }
+.winter .board-item-post-user {
+  border-left: 2px solid aqua;
+}
 
 .darkmode .board-item-post-user {
   border-left: 2px solid black;
@@ -1314,6 +1337,9 @@
 }
 .autumn .board-item-content {
   background-color: rgba(255, 69, 0, 0.4);
+}
+.winter .board-item-content {
+  background-color: rgba(0, 255, 255, 0.4);
 }
 
 .board-item-content-display {

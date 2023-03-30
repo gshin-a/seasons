@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { SpringIntroduction } from "../components/Introduction";
-import Activity from "./../components/Activity";
-import Tip from "./../components/Tip";
-import Gallery from "./../components/Gallery";
-import Board from "./../components/Board";
+import Activity from "../components/Activity";
+import Tip from "../components/Tip";
+import Gallery from "../components/Gallery";
+import Board from "../components/Board";
 import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
 import {
