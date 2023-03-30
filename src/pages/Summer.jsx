@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { SummerIntroduction } from "../components/Introduction";
 import Activity from "../components/Activity";
 import Tip from "../components/Tip";
 import Gallery from "../components/Gallery";
 import Board from "../components/Board";
-import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
 import {
   festivalActivityList,
@@ -18,7 +16,6 @@ const Summer = ({ isDarkMode, setIsDarkMode }) => {
   const { state } = useParams();
   const [summerState, setSummerState] = useState(state ? state : "intro");
   const [summerPostData, setsummerPostData] = useState([]);
-  const [openSidebar, setSidebar] = useState(false);
 
   useEffect(() => {
     setSummerState(state);
@@ -37,16 +34,6 @@ const Summer = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <div className={"summer" + (isDarkMode ? " darkmode" : "")}>
-      <Header
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
-        type="summer"
-      />
-      {openSidebar ? (
-        <HamburgerSidebar handleHamburgerClose={() => setSidebar(false)} />
-      ) : (
-        <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
-      )}
       <div className="subpage-content">
         <div className="subpage-maincontent">
           {summerState === "intro" && <SummerIntroduction />}

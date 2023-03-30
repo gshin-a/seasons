@@ -163,16 +163,16 @@
   display: block;
 }
 
-.spring .header-nav-submenu {
+.header-spring .header-nav-submenu {
   background-color: pink;
 }
-.summer .header-nav-submenu {
+.header-summer .header-nav-submenu {
   background-color: skyblue;
 }
-.autumn .header-nav-submenu {
+.header-autumn .header-nav-submenu {
   background-color: rgba(255, 69, 0, 1);
 }
-.winter .header-nav-submenu {
+.header-winter .header-nav-submenu {
   background-color: aqua;
 }
 

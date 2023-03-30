@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
+import Header from "./components/Header";
+import Hamburger, { HamburgerSidebar } from "./components/Hamburger";
 import Home from "./pages/Home";
 import Spring from "./pages/Spring";
 import Summer from "./pages/Summer";
@@ -20,11 +22,18 @@ function ScrollToTop() {
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [openSidebar, setSidebar] = useState(false);
 
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
+        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        {openSidebar ? (
+          <HamburgerSidebar handleHamburgerClose={() => setSidebar(false)} />
+        ) : (
+          <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
+        )}
         <Routes>
           <Route
             path="/"

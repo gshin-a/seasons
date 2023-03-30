@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { WinterIntroduction } from "../components/Introduction";
 import Activity from "../components/Activity";
 import Tip from "../components/Tip";
 import Gallery from "../components/Gallery";
 import Board from "../components/Board";
-import Hamburger, { HamburgerSidebar } from "../components/Hamburger";
 import { useParams } from "react-router-dom";
 import {
   festivalActivityList,
@@ -18,7 +16,6 @@ const Winter = ({ isDarkMode, setIsDarkMode }) => {
   const { state } = useParams();
   const [winterState, setWinterState] = useState(state ? state : "intro");
   const [winterPostData, setWinterPostData] = useState([]);
-  const [openSidebar, setSidebar] = useState(false);
 
   useEffect(() => {
     setWinterState(state);
@@ -37,16 +34,6 @@ const Winter = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <div className={"winter" + (isDarkMode ? " darkmode" : "")}>
-      <Header
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
-        type="winter"
-      />
-      {openSidebar ? (
-        <HamburgerSidebar handleHamburgerClose={() => setSidebar(false)} />
-      ) : (
-        <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
-      )}
       <div className="subpage-content">
         <div className="subpage-maincontent">
           {winterState === "intro" && <WinterIntroduction />}

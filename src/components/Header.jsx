@@ -1,14 +1,17 @@
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
-const Header = ({ isDarkMode, setIsDarkMode, type }) => {
+const Header = ({ isDarkMode, setIsDarkMode }) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <header
       className={
-        "header" + (isDarkMode ? " header-darkmode" : "") + ` header-${type}`
+        "header" +
+        (isDarkMode ? " header-darkmode" : "") +
+        ` header-${location.pathname.split("/")[1]}`
       }
     >
       <div className="header-logo">
