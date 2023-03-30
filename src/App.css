@@ -415,6 +415,7 @@
 
 .carousel-image-wrapper {
   position: relative;
+  left: 0vw;
 }
 
 .carousel-image-spring {
@@ -526,12 +527,27 @@
 }
 
 .carousel-button {
-  display: flex;
-  flex-direction: column;
   margin-top: 25vh;
   gap: 50px;
   width: 200px;
   margin-left: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.carousel-button-autoslide {
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  bottom: 10px;
+  left: 10px;
+  font-size: 22px;
 }
 
 .carousel-button button {
