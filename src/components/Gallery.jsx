@@ -114,7 +114,7 @@ const GalleryItem = ({ title, type, galleryList }) => {
       <div className="gallery-item-wrapper">
         <GalleryItemLeftButton type={type} />
         <div className="gallery-items-visible">
-          <div className={"gallery-items" + ` gallery-items-${type}`}>
+          <div className={`gallery-items gallery-items-${type}`}>
             {galleryList.map((it) => (
               <GalleryItemContent
                 key={it.id}

@@ -1,9 +1,8 @@
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ isDarkMode, setIsDarkMode, type }) => {
-  const location = useLocation();
   const navigate = useNavigate();
 
   return (
