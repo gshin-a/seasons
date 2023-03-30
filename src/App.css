@@ -1431,11 +1431,8 @@
   .carousel-button button {
     font-size: 20px;
   }
-  .carousel-button .carousel-button-autoslide {
-    font-size: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    margin: auto;
+  .carousel-button-autoslide {
+    font-size: 16px;
   }
 }
 
