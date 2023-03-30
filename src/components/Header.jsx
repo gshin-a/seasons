@@ -6,7 +6,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
   const navigate = useNavigate();
 
   return (
-    <div
+    <header
       className={
         "header" + (isDarkMode ? " header-darkmode" : "") + ` header-${type}`
       }
@@ -86,7 +86,7 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
           {isDarkMode ? <DarkModeIcon /> : <LightModeIcon />}
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 

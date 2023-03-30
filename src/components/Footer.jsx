@@ -4,7 +4,7 @@ const Footer = () => {
   const [imageSrcHidden, setImageSrcHidden] = useState(true);
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <p>Copyright © 2023 Four Seasons. All rights reserved.</p>
       <address>Contact me. ghshin@mobiliverse.com </address>
       <div className="footer-github">
@@ -102,7 +102,7 @@ const Footer = () => {
         </a>
         님의 이미지 입니다.
       </div>
-    </div>
+    </footer>
   );
 };
 
