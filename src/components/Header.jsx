@@ -13,14 +13,9 @@ const Header = ({ isDarkMode, setIsDarkMode, type }) => {
       }
     >
       <div className="header-logo">
-        <span>Four Seasons</span>
+        <Link to={"/"}>Four Seasons</Link>
       </div>
       <ul className="header-nav">
-        <li className={location.pathname === "/" ? "curlocation" : ""}>
-          <Link to={"/"} className="header-nav-link">
-            HOME
-          </Link>
-        </li>
         <li className="header-nav-menu">
           <Link to={"/spring/intro"} className="header-nav-link">
             SPRING

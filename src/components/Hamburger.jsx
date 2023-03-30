@@ -1,4 +1,4 @@
-import { useNavigate, useLocation, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import ClearIcon from "@mui/icons-material/Clear";
 
@@ -16,7 +16,6 @@ const Hamburger = ({ handleHamburgerOpen }) => {
 };
 
 export const HamburgerSidebar = ({ handleHamburgerClose }) => {
-  const location = useLocation();
   const navigate = useNavigate();
   return (
     <div className="hamburger-sidebar">
@@ -24,13 +23,7 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
         <div className="hamburger-nav-button" onClick={handleHamburgerClose}>
           <ClearIcon />
         </div>
-        <li
-          className={
-            location.pathname === "/"
-              ? "curlocation hamburger-nav-menu"
-              : "hamburger-nav-menu"
-          }
-        >
+        <li className="hamburger-nav-menu">
           <Link to={"/"} className="hamburger-nav-link">
             HOME
           </Link>

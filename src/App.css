@@ -76,8 +76,16 @@
   align-items: center;
   font-size: 30px;
   font-weight: bold;
-  cursor: default;
   white-space: nowrap;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-darkmode .header-logo a {
+  color: white;
 }
 
 .header-nav {
@@ -109,19 +117,6 @@
 
 .header-nav li:hover {
   transform: scale(1.2);
-}
-
-.header-nav .curlocation {
-  pointer-events: none;
-}
-
-.header-nav .curlocation a {
-  color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
-.header-darkmode .header-nav .curlocation a {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .header-button {
