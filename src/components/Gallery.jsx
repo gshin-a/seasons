@@ -115,11 +115,11 @@ const GalleryItem = ({ title, type, galleryList }) => {
         <GalleryItemLeftButton type={type} />
         <div className="gallery-items-visible">
           <div className={`gallery-items gallery-items-${type}`}>
-            {galleryList.map((it) => (
+            {galleryList.map(({ id, imgSrc, description }) => (
               <GalleryItemContent
-                key={it.id}
-                imgSrc={it.imgSrc}
-                description={it.description}
+                key={id}
+                imgSrc={imgSrc}
+                description={description}
               />
             ))}
           </div>

@@ -4,10 +4,10 @@ const Introduction = ({ introductionList, season }) => {
   const navigate = useNavigate();
   return (
     <div className="intro">
-      {introductionList.map((e, idx) => (
-        <div key={e.id}>
-          {idx === 0 ? <h1>{e.title}</h1> : <h2>{e.title}</h2>}
-          <div style={{ whiteSpace: "pre-line" }}>{e.description}</div>
+      {introductionList.map(({ id, title, description }, idx) => (
+        <div key={id}>
+          {idx === 0 ? <h1>{title}</h1> : <h2>{title}</h2>}
+          <div style={{ whiteSpace: "pre-line" }}>{description}</div>
           {idx === 3 && (
             <button onClick={() => navigate("/spring/activity")}>
               &raquo; look into more about{" "}

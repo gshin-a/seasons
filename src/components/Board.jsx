@@ -41,14 +41,14 @@ const Board = ({ springPostData }) => {
         </div>
       </div>
       {springPostData.map(
-        (e) =>
-          e.title.indexOf(filter) !== -1 && (
+        ({ id, title, userId, body }) =>
+          title.indexOf(filter) !== -1 && (
             <BoardItem
-              key={e.id}
-              postnumber={e.id}
-              title={e.title}
-              user={e.userId}
-              content={e.body}
+              key={id}
+              postnumber={id}
+              title={title}
+              user={userId}
+              content={body}
             />
           )
       )}

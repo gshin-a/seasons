@@ -19,14 +19,14 @@ const TipContent = ({ season, imgNum, title, description, link }) => {
 const Tip = ({ tipList, season }) => {
   return (
     <div className="tip">
-      {tipList.map((e) => (
+      {tipList.map(({ imgNum, title, description, link }) => (
         <TipContent
-          key={e.imgNum}
+          key={imgNum}
           season={season}
-          imgNum={e.imgNum}
-          title={e.title}
-          description={e.description}
-          link={e.link}
+          imgNum={imgNum}
+          title={title}
+          description={description}
+          link={link}
         />
       ))}
     </div>
