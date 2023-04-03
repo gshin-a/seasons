@@ -1,10 +1,12 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import ClearIcon from "@mui/icons-material/Clear";
+import { seasonList, submenuList } from "../data/header";
 
 const Hamburger = ({ handleHamburgerOpen }) => {
+  const location = useLocation();
   return (
-    <div className="hamburger">
+    <div className={`hamburger hamburger-${location.pathname.split("/")[1]}`}>
       <div className="header-logo">
         <span>Four Seasons</span>
       </div>
@@ -15,10 +17,34 @@ const Hamburger = ({ handleHamburgerOpen }) => {
   );
 };
 
-export const HamburgerSidebar = ({ handleHamburgerClose }) => {
+const HamburgerSidebarSubmenu = ({ season, handleHamburgerClose }) => {
   const navigate = useNavigate();
+
   return (
-    <div className="hamburger-sidebar">
+    <ul className="hamburger-nav-submenu">
+      {submenuList.map(({ name, navigation }) => (
+        <li
+          onClick={() => {
+            navigate(`/${season}/${navigation}`);
+            handleHamburgerClose();
+          }}
+        >
+          &raquo; {name}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export const HamburgerSidebar = ({ handleHamburgerClose }) => {
+  const location = useLocation();
+
+  return (
+    <div
+      className={`hamburger-sidebar hamburger-sidebar-${
+        location.pathname.split("/")[1]
+      }`}
+    >
       <ul className="hamburger-nav">
         <div className="hamburger-nav-button" onClick={handleHamburgerClose}>
           <ClearIcon />
@@ -28,194 +54,17 @@ export const HamburgerSidebar = ({ handleHamburgerClose }) => {
             HOME
           </Link>
         </li>
-        <li className="hamburger-nav-menu">
-          <Link to={"/spring/intro"} className="hamburger-nav-link">
-            SPRING
-          </Link>
-          <ul className="hamburger-nav-submenu">
-            <li
-              onClick={() => {
-                navigate("/spring/intro");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Introduction
-            </li>
-            <li
-              onClick={() => {
-                navigate("/spring/activity");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Activities
-            </li>
-            <li
-              onClick={() => {
-                navigate("/spring/tip");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Tips
-            </li>
-            <li
-              onClick={() => {
-                navigate("/spring/gallery");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Gallery
-            </li>
-            <li
-              onClick={() => {
-                navigate("/spring/board");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Board
-            </li>
-          </ul>
-        </li>
-        <li className="hamburger-nav-menu">
-          <Link to={"/summer/intro"} className="hamburger-nav-link">
-            SUMMER
-          </Link>
-          <ul className="hamburger-nav-submenu">
-            <li
-              onClick={() => {
-                navigate("/summer/intro");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Introduction
-            </li>
-            <li
-              onClick={() => {
-                navigate("/summer/activity");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Activities
-            </li>
-            <li
-              onClick={() => {
-                navigate("/summer/tip");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Tips
-            </li>
-            <li
-              onClick={() => {
-                navigate("/summer/gallery");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Gallery
-            </li>
-            <li
-              onClick={() => {
-                navigate("/summer/board");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Board
-            </li>
-          </ul>
-        </li>
-        <li className="hamburger-nav-menu">
-          <Link to={"/autumn/intro"} className="hamburger-nav-link">
-            AUTUMN
-          </Link>
-          <ul className="hamburger-nav-submenu">
-            <li
-              onClick={() => {
-                navigate("/autumn/intro");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Introduction
-            </li>
-            <li
-              onClick={() => {
-                navigate("/autumn/activity");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Activities
-            </li>
-            <li
-              onClick={() => {
-                navigate("/autumn/tip");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Tips
-            </li>
-            <li
-              onClick={() => {
-                navigate("/autumn/gallery");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Gallery
-            </li>
-            <li
-              onClick={() => {
-                navigate("/autumn/board");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Board
-            </li>
-          </ul>
-        </li>
-        <li className="hamburger-nav-menu">
-          <Link to={"/winter/intro"} className="hamburger-nav-link">
-            WINTER
-          </Link>
-          <ul className="hamburger-nav-submenu">
-            <li
-              onClick={() => {
-                navigate("/winter/intro");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Introduction
-            </li>
-            <li
-              onClick={() => {
-                navigate("/winter/activity");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Activities
-            </li>
-            <li
-              onClick={() => {
-                navigate("/winter/tip");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Tips
-            </li>
-            <li
-              onClick={() => {
-                navigate("/winter/gallery");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Gallery
-            </li>
-            <li
-              onClick={() => {
-                navigate("/winter/board");
-                handleHamburgerClose();
-              }}
-            >
-              &raquo; Board
-            </li>
-          </ul>
-        </li>
+        {seasonList.map((season) => (
+          <li className="hamburger-nav-menu">
+            <Link to={`/${season}/intro`} className="hamburger-nav-link">
+              {season.toUpperCase()}
+            </Link>
+            <HamburgerSidebarSubmenu
+              season={season}
+              handleHamburgerClose={handleHamburgerClose}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );

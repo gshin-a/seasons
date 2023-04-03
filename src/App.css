@@ -202,6 +202,10 @@
   align-items: center;
 }
 
+.hamburger:hover {
+  background-color: rgba(247, 247, 244, 0.8);
+}
+
 .hamburger-darkmode {
   color: white;
 }
@@ -212,33 +216,33 @@
   cursor: pointer;
 }
 
-.spring .hamburger {
+.hamburger-spring {
   position: sticky;
   background-color: rgba(255, 192, 203, 0.8);
 }
-.summer .hamburger {
+.hamburger-summer {
   position: sticky;
   background-color: rgba(135, 207, 235, 0.8);
 }
-.autumn .hamburger {
+.hamburger-autumn {
   position: sticky;
   background-color: rgba(255, 69, 0, 0.8);
 }
-.winter .hamburger {
+.hamburger-winter {
   position: sticky;
   background-color: rgba(0, 255, 255, 0.8);
 }
 
-.spring .hamburger:hover {
+.hamburger-spring:hover {
   background-color: pink;
 }
-.summer .hamburger:hover {
+.hamburger-summer:hover {
   background-color: rgba(135, 207, 235, 1);
 }
-.autumn .hamburger:hover {
+.hamburger-autumn:hover {
   background-color: rgba(255, 69, 0, 1);
 }
-.winter .hamburger:hover {
+.hamburger-winter:hover {
   background-color: rgba(0, 255, 255, 1);
 }
 
@@ -248,10 +252,6 @@
 
 .darkmode .hamburger:hover {
   background-color: rgba(75, 74, 74, 1);
-}
-
-.hamburger:hover {
-  background-color: rgba(247, 247, 244, 0.8);
 }
 
 .hamburger-sidebar {
@@ -266,16 +266,16 @@
   display: none;
 }
 
-.spring .hamburger-sidebar {
+.hamburger-sidebar-spring {
   background-color: pink;
 }
-.summer .hamburger-sidebar {
+.hamburger-sidebar-summer {
   background-color: skyblue;
 }
-.autumn .hamburger-sidebar {
+.hamburger-sidebar-autumn {
   background-color: rgba(255, 69, 0, 1);
 }
-.winter .hamburger-sidebar {
+.hamburger-sidebar-winter {
   background-color: aqua;
 }
 
@@ -1434,6 +1434,21 @@
   .carousel-button-autoslide {
     font-size: 16px;
   }
+  .board {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .board-item-post-postnumber {
+    margin-right: 2vw;
+    padding-right: 2vw;
+  }
+  .board-item-post-title {
+    margin-right: 2vw;
+  }
+  .board-item-post-user {
+    padding-left: 2vw;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1460,12 +1475,6 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .board {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .activity {
     padding: 0;
   }
@@ -1521,19 +1530,5 @@
   .gallery-item-content {
     width: 70vw;
     max-width: 250px;
-  }
-  .board-item-post {
-    font-size: 15px;
-    padding: 5%;
-  }
-  .board-item-post-postnumber {
-    margin-right: 2vw;
-    padding-right: 2vw;
-  }
-  .board-item-post-title {
-    margin-right: 2vw;
-  }
-  .board-item-post-user {
-    padding-left: 2vw;
   }
 }
