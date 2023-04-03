@@ -15,6 +15,7 @@ const CarouselButton = ({ handleCarousel, setAutoslide }) => {
       <div className="carousel-button-wrapper">
         {seasonList.map((season, idx) => (
           <button
+            key={season}
             onClick={() => {
               handleCarousel(idx);
             }}

@@ -3,7 +3,10 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Hamburger, { HamburgerSidebar } from "./components/Hamburger";
+import Hamburger, {
+  HamburgerMenu,
+  HamburgerSidebar,
+} from "./components/Hamburger";
 import Home from "./pages/Home";
 import Spring from "./pages/Spring";
 import Summer from "./pages/Summer";
@@ -30,10 +33,11 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <HamburgerMenu openSidebar={openSidebar} setSidebar={setSidebar} />
         {openSidebar ? (
           <HamburgerSidebar handleHamburgerClose={() => setSidebar(false)} />
         ) : (
-          <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
+          <Hamburger />
         )}
         <Routes>
           <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
