@@ -1,5 +1,4 @@
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
 import { MainContent1, MainContent2 } from "../components/MainContents";
 import {
   springText,

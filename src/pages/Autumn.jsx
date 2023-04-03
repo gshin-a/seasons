@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Footer from "../components/Footer";
 import Introduction from "../components/Introduction";
 import Activity from "./../components/Activity";
 import Tip from "./../components/Tip";
