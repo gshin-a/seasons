@@ -10,6 +10,9 @@ import {
   festivalActivityList,
   foodActivityList,
   tipList,
+  JejuGalleryList,
+  SeoulGalleryList,
+  BusanGalleryList,
 } from "../data/autumn";
 
 const Autumn = ({ isDarkMode }) => {
@@ -47,7 +50,13 @@ const Autumn = ({ isDarkMode }) => {
             />
           )}
           {autumnState === "tip" && <Tip tipList={tipList} season="autumn" />}
-          {autumnState === "gallery" && <Gallery />}
+          {autumnState === "gallery" && (
+            <Gallery
+              JejuGalleryList={JejuGalleryList}
+              SeoulGalleryList={SeoulGalleryList}
+              BusanGalleryList={BusanGalleryList}
+            />
+          )}
           {autumnState === "board" && <Board springPostData={autumnPostData} />}
         </div>
       </div>

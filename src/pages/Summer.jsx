@@ -10,6 +10,9 @@ import {
   festivalActivityList,
   foodActivityList,
   tipList,
+  JejuGalleryList,
+  SeoulGalleryList,
+  BusanGalleryList,
 } from "../data/summer";
 
 const Summer = ({ isDarkMode }) => {
@@ -47,7 +50,13 @@ const Summer = ({ isDarkMode }) => {
             />
           )}
           {summerState === "tip" && <Tip tipList={tipList} season="summer" />}
-          {summerState === "gallery" && <Gallery />}
+          {summerState === "gallery" && (
+            <Gallery
+              JejuGalleryList={JejuGalleryList}
+              SeoulGalleryList={SeoulGalleryList}
+              BusanGalleryList={BusanGalleryList}
+            />
+          )}
           {summerState === "board" && <Board springPostData={summerPostData} />}
         </div>
       </div>

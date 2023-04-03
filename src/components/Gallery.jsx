@@ -1,9 +1,3 @@
-import {
-  JejuGalleryList,
-  SeoulGalleryList,
-  BusanGalleryList,
-} from "../data/spring";
-
 const GalleryItemContent = ({ imgSrc, description }) => {
   return (
     <div className="gallery-item-content">
@@ -133,7 +127,7 @@ const GalleryItem = ({ title, type, galleryList }) => {
   );
 };
 
-const Gallery = () => {
+const Gallery = ({ JejuGalleryList, SeoulGalleryList, BusanGalleryList }) => {
   return (
     <div className="gallery">
       <GalleryItem title="Jeju Island" type={1} galleryList={JejuGalleryList} />

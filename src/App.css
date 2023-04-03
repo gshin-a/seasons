@@ -1278,6 +1278,7 @@
   font-size: 20px;
   background-color: rgba(255, 192, 203, 0.5);
   border-radius: 50%;
+  cursor: pointer;
 
   pointer-events: none;
   opacity: 0.5;
@@ -1302,6 +1303,7 @@
   font-size: 20px;
   background-color: rgba(255, 192, 203, 0.5);
   border-radius: 50%;
+  cursor: pointer;
 }
 .summer .gallery-item-right-button {
   background-color: rgba(115, 196, 228, 0.5);

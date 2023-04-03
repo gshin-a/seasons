@@ -125,102 +125,116 @@ export const tipList = [
 export const JejuGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-1.jpg`,
-    description: "Dolhareubang in Jeju Island",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-1.jpg`,
+    description: "Jeju Island's summer sea is good for playing in the water",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-2.jpg`,
-    description: "Jeju tourist attractions that you can't miss this spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-2.jpg`,
+    description: "Enjoy the summer in Jeju",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-3.jpg`,
-    description:
-      "Jeju, where spring has come first, is in full bloom with cherry blossoms and rape flowers",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-3.jpg`,
+    description: "I love hot Jeju Island",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-4.jpg`,
-    description: "7 reasons why you should travel to Jeju in April",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-4.jpg`,
+    description: "The cute dolphin of Jeju Island in summer",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-5.jpg`,
-    description: "Jeju Spring Full of Flower Scent",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-5.jpg`,
+    description: "Crowded with people. Jeju Island is the best in summer",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-6.jpg`,
-    description:
-      "Recommended trekking course to feel the spring of Hallasan Mountain",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-summer-6.jpg`,
+    description: "Jeju Island that I fell in love with the whole world",
   },
 ];
 
 export const SeoulGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-1.jpg`,
-    description: "a two-legged spring outing in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-1.jpg`,
+    description: "Enjoy the shade in downtown Seoul",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-2.jpg`,
-    description: "Seoul Spring Date. Best 5 for couples",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-2.jpg`,
+    description: "In summer, street fountains are the best",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-3.jpg`,
-    description: "Places to go for a walk in Seoul's spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-3.jpg`,
+    description: "The night in Seoul is with the night market",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-4.jpg`,
-    description:
-      "This is the spring picnic in Seoul, the spring scenery of Seoul Forest",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-4.jpg`,
+    description: "Han River Festival is so cool",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-5.jpg`,
-    description: "Enjoy Spring Flowers at Seoul Land!",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-5.jpg`,
+    description: "Hot summer cool summer forest road",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-6.jpg`,
-    description: "Namsan Tower, a good place to go on a spring trip in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-summer-6.jpg`,
+    description: "Summer Night in Seoul",
   },
 ];
 
 export const BusanGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-1.jpg`,
-    description:
-      "It's already spring in Busan! Let's go to the plum blossom destination",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-1.jpg`,
+    description: "Busan Beach in Summer with So Many People",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-2.jpg`,
-    description: "Spring in Daishin Park with Cherry Blossoms",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-2.jpg`,
+    description: "A hot summer vacation spot in Busan!",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-3.jpg`,
-    description: "Spring Sunrise at Hwangnyeongsan Mountain in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-3.jpg`,
+    description: "Busan, the city of romance",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-4.jpg`,
-    description: "a spring flower trip to Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-4.jpg`,
+    description: "A summer vacation to find the beauty and taste of Busan",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-5.jpg`,
-    description: "Spring in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-5.jpg`,
+    description: "A summer vacation to find the beauty and taste of Busan",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-6.jpg`,
-    description: "Let's go to Busan in spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-summer-6.jpg`,
+    description: "Go on a date at Busan Beach",
   },
 ];

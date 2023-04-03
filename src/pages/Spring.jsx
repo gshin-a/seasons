@@ -10,6 +10,9 @@ import {
   festivalActivityList,
   foodActivityList,
   tipList,
+  JejuGalleryList,
+  SeoulGalleryList,
+  BusanGalleryList,
 } from "../data/spring";
 
 const Spring = ({ isDarkMode }) => {
@@ -47,7 +50,13 @@ const Spring = ({ isDarkMode }) => {
             />
           )}
           {springState === "tip" && <Tip tipList={tipList} season="spring" />}
-          {springState === "gallery" && <Gallery />}
+          {springState === "gallery" && (
+            <Gallery
+              JejuGalleryList={JejuGalleryList}
+              SeoulGalleryList={SeoulGalleryList}
+              BusanGalleryList={BusanGalleryList}
+            />
+          )}
           {springState === "board" && <Board springPostData={springPostData} />}
         </div>
       </div>
