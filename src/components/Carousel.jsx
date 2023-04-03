@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { seasonList } from "../data/header";
 
 const CarouselButton = ({ handleCarousel, setAutoslide }) => {
   return (
@@ -12,34 +13,15 @@ const CarouselButton = ({ handleCarousel, setAutoslide }) => {
       }}
     >
       <div className="carousel-button-wrapper">
-        <button
-          onClick={() => {
-            handleCarousel(0);
-          }}
-        >
-          Spring
-        </button>
-        <button
-          onClick={() => {
-            handleCarousel(1);
-          }}
-        >
-          Summer
-        </button>
-        <button
-          onClick={() => {
-            handleCarousel(2);
-          }}
-        >
-          Autumn
-        </button>
-        <button
-          onClick={() => {
-            handleCarousel(3);
-          }}
-        >
-          Winter
-        </button>
+        {seasonList.map((season, idx) => (
+          <button
+            onClick={() => {
+              handleCarousel(idx);
+            }}
+          >
+            {season.charAt(0).toUpperCase() + season.slice(1)}
+          </button>
+        ))}
       </div>
     </div>
   );
