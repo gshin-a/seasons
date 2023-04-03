@@ -5,7 +5,7 @@ const Introduction = ({ introductionList, season }) => {
   return (
     <div className="intro">
       {introductionList.map(({ id, title, description }, idx) => (
-        <div key={id}>
+        <div key={id} className="intro-section">
           {idx === 0 ? <h1>{title}</h1> : <h2>{title}</h2>}
           <div style={{ whiteSpace: "pre-line" }}>{description}</div>
           {idx === 3 && (
