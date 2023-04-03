@@ -2,8 +2,25 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
-const Header = ({ isDarkMode, setIsDarkMode }) => {
+const seasonList = ["spring", "summer", "autumn", "winter"];
+
+const Submenu = ({ season }) => {
   const navigate = useNavigate();
+
+  return (
+    <ul className="header-nav-submenu">
+      <li onClick={() => navigate(`/${season}/intro`)}>&raquo; Introduction</li>
+      <li onClick={() => navigate(`/${season}/activity`)}>
+        &raquo; Activities
+      </li>
+      <li onClick={() => navigate(`/${season}/tip`)}>&raquo; Tips</li>
+      <li onClick={() => navigate(`/${season}/gallery`)}>&raquo; Gallery</li>
+      <li onClick={() => navigate(`/${season}/board`)}>&raquo; Board</li>
+    </ul>
+  );
+};
+
+const Header = ({ isDarkMode, setIsDarkMode }) => {
   const location = useLocation();
 
   return (
@@ -18,70 +35,14 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         <Link to={"/"}>Four Seasons</Link>
       </div>
       <ul className="header-nav">
-        <li className="header-nav-menu">
-          <Link to={"/spring/intro"} className="header-nav-link">
-            SPRING
-          </Link>
-          <ul className="header-nav-submenu">
-            <li onClick={() => navigate("/spring/intro")}>
-              &raquo; Introduction
-            </li>
-            <li onClick={() => navigate("/spring/activity")}>
-              &raquo; Activities
-            </li>
-            <li onClick={() => navigate("/spring/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/spring/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/spring/board")}>&raquo; Board</li>
-          </ul>
-        </li>
-        <li className="header-nav-menu">
-          <Link to={"/summer/intro"} className="header-nav-link">
-            SUMMER
-          </Link>
-          <ul className="header-nav-submenu">
-            <li onClick={() => navigate("/summer/intro")}>
-              &raquo; Introduction
-            </li>
-            <li onClick={() => navigate("/summer/activity")}>
-              &raquo; Activities
-            </li>
-            <li onClick={() => navigate("/summer/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/summer/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/summer/board")}>&raquo; Board</li>
-          </ul>
-        </li>
-        <li className="header-nav-menu">
-          <Link to={"/autumn/intro"} className="header-nav-link">
-            AUTUMN
-          </Link>
-          <ul className="header-nav-submenu">
-            <li onClick={() => navigate("/autumn/intro")}>
-              &raquo; Introduction
-            </li>
-            <li onClick={() => navigate("/autumn/activity")}>
-              &raquo; Activities
-            </li>
-            <li onClick={() => navigate("/autumn/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/autumn/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/autumn/board")}>&raquo; Board</li>
-          </ul>
-        </li>
-        <li className="header-nav-menu">
-          <Link to={"/winter/intro"} className="header-nav-link">
-            WINTER
-          </Link>
-          <ul className="header-nav-submenu">
-            <li onClick={() => navigate("/winter/intro")}>
-              &raquo; Introduction
-            </li>
-            <li onClick={() => navigate("/winter/activity")}>
-              &raquo; Activities
-            </li>
-            <li onClick={() => navigate("/winter/tip")}>&raquo; Tips</li>
-            <li onClick={() => navigate("/winter/gallery")}>&raquo; Gallery</li>
-            <li onClick={() => navigate("/winter/board")}>&raquo; Board</li>
-          </ul>
-        </li>
+        {seasonList.map((season) => (
+          <li className="header-nav-menu" key={season}>
+            <Link to={`/${season}/intro`} className="header-nav-link">
+              {season.toUpperCase()}
+            </Link>
+            <Submenu season={season} />
+          </li>
+        ))}
       </ul>
 
       <div className="header-button">
