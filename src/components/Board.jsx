@@ -22,23 +22,41 @@ const BoardItem = ({ postnumber, title, user, content }) => {
 };
 
 const Board = ({ springPostData }) => {
+  const [searchInput, setSearchInput] = useState("");
   const [filter, setFilter] = useState("");
 
   return (
     <div className="board">
       <div className="board-search">
-        Search{" "}
         <div className="board-inputwrapper">
-          <input onChange={(e) => setFilter(e.target.value)} value={filter} />
+          <input
+            onChange={(e) => setSearchInput(e.target.value)}
+            value={searchInput}
+          />
           <button
             className="board-input-resetbutton"
             onClick={() => {
-              setFilter("");
+              setSearchInput("");
             }}
           >
             X
           </button>
         </div>
+        <button
+          className="board-search-button"
+          onClick={() => setFilter(searchInput)}
+        >
+          search
+        </button>
+        <button
+          className="board-reset-button"
+          onClick={() => {
+            setFilter("");
+            setSearchInput("");
+          }}
+        >
+          reset
+        </button>
       </div>
       {springPostData.map(
         ({ id, title, userId, body }) =>

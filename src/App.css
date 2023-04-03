@@ -1248,6 +1248,23 @@
 
 .board-search {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.board-search-button {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.board-reset-button {
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .board-inputwrapper {
