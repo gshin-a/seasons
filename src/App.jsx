@@ -36,59 +36,22 @@ function App() {
           <Hamburger handleHamburgerOpen={() => setSidebar(true)} />
         )}
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
-          />
+          <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
           <Route
             path="/spring/:state"
-            element={
-              <Spring isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
-          />
-          <Route
-            path="/spring"
-            element={
-              <Spring isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
+            element={<Spring isDarkMode={isDarkMode} />}
           />
           <Route
             path="/summer/:state"
-            element={
-              <Summer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
+            element={<Summer isDarkMode={isDarkMode} />}
           />
-          <Route
-            path="/summer"
-            element={
-              <Summer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
-          />{" "}
           <Route
             path="/autumn/:state"
-            element={
-              <Autumn isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
-          />
-          <Route
-            path="/autumn"
-            element={
-              <Autumn isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
+            element={<Autumn isDarkMode={isDarkMode} />}
           />
           <Route
             path="/winter/:state"
-            element={
-              <Winter isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
-          />
-          <Route
-            path="/winter"
-            element={
-              <Winter isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-            }
+            element={<Winter isDarkMode={isDarkMode} />}
           />
         </Routes>
 
