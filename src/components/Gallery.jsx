@@ -1,8 +1,23 @@
+import { useState } from "react";
+
 const GalleryItemContent = ({ imgSrc, description }) => {
+  const [openDetail, setOpenDetail] = useState(false);
+
   return (
-    <div className="gallery-item-content">
+    <div
+      className="gallery-item-content"
+      onClick={() => setOpenDetail(!openDetail)}
+    >
       <img src={imgSrc} alt="gallery item content" />
       <div className="gallery-description">{description}</div>
+      <div>
+        {openDetail && (
+          <div className="gallery-item-content-detail">
+            <img src={imgSrc} alt="gallery item content" />
+            <div>{description}</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
