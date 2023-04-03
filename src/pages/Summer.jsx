@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
-import { SummerIntroduction } from "../components/Introduction";
+import Introduction from "../components/Introduction";
 import Activity from "../components/Activity";
 import Tip from "../components/Tip";
 import Gallery from "../components/Gallery";
 import Board from "../components/Board";
 import { useParams } from "react-router-dom";
 import {
+  introductionList,
   festivalActivityList,
   foodActivityList,
   tipList,
 } from "../data/summer";
 
-const Summer = ({ isDarkMode, setIsDarkMode }) => {
+const Summer = ({ isDarkMode }) => {
   const { state } = useParams();
   const [summerState, setSummerState] = useState(state ? state : "intro");
   const [summerPostData, setsummerPostData] = useState([]);
@@ -36,7 +37,9 @@ const Summer = ({ isDarkMode, setIsDarkMode }) => {
     <div className={"summer" + (isDarkMode ? " darkmode" : "")}>
       <div className="subpage-content">
         <div className="subpage-maincontent">
-          {summerState === "intro" && <SummerIntroduction />}
+          {summerState === "intro" && (
+            <Introduction introductionList={introductionList} season="summer" />
+          )}
           {summerState === "activity" && (
             <Activity
               festivalActivityList={festivalActivityList}

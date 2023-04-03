@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
-import { SpringIntroduction } from "../components/Introduction";
+import Introduction from "../components/Introduction";
 import Activity from "../components/Activity";
 import Tip from "../components/Tip";
 import Gallery from "../components/Gallery";
 import Board from "../components/Board";
 import { useParams } from "react-router-dom";
 import {
+  introductionList,
   festivalActivityList,
   foodActivityList,
   tipList,
 } from "../data/spring";
 
-const Spring = ({ isDarkMode, setIsDarkMode }) => {
+const Spring = ({ isDarkMode }) => {
   const { state } = useParams();
   const [springState, setSpringState] = useState(state ? state : "intro");
   const [springPostData, setSpringPostData] = useState([]);
@@ -36,7 +37,9 @@ const Spring = ({ isDarkMode, setIsDarkMode }) => {
     <div className={"spring" + (isDarkMode ? " darkmode" : "")}>
       <div className="subpage-content">
         <div className="subpage-maincontent">
-          {springState === "intro" && <SpringIntroduction />}
+          {springState === "intro" && (
+            <Introduction introductionList={introductionList} season="spring" />
+          )}
           {springState === "activity" && (
             <Activity
               festivalActivityList={festivalActivityList}

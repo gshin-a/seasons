@@ -1,3 +1,62 @@
+export const introductionList = [
+  {
+    id: 1,
+    title: "Introduction to Autumn in Korea",
+    description: `Autumn is a beautiful season in Korea, marked by cool temperatures, stunning foliage, and various outdoor festivals and events. Frommid-September to early November, the country is transformed into a colorful paradise, making it the perfect time to explore the country's natural beauty and cultural heritage. In this article, we will explore several subheadings that will give foreigners an understanding of what to expect during autumn in Korea.`,
+  },
+  {
+    id: 2,
+    title: "Climate and Temperatures",
+    description: `Autumn in Korea is characterized by mild temperatures and comfortableweather conditions, making it an ideal time for outdoor activities. The season typically lasts from mid-September to early November, withaverage temperatures ranging from 10 to 20 degrees Celsius (50 to 68degrees Fahrenheit).
+    
+    During the day, temperatures are pleasantly warm, while evenings and mornings can be slightly chilly. However, as the season progresses, temperatures gradually drop, and visitors can experience the beautiful sight of the autumn leaves changing colors..
+    
+    The autumn climate in Korea is generally dry and sunny, with clear blueskies and low humidity levels. However, there may be occasional rainshowers, especially in late October and early November. Therefore, it is advisable to bring an umbrella or raincoat when visiting Korea duringthe autumn season.
+    
+    Overall, the autumn climate in Korea is perfect for outdoor activitiesand exploring the country's natural beauty. Whether it's hiking through scenic national parks, visiting traditional markets, or attendingcultural festivals, visitors can enjoy the comfortable temperatures and pleasant weather conditions that the autumn season brings to Korea.`,
+  },
+  {
+    id: 3,
+    title: "Foliage Season",
+    description: `Autumn in Korea is known as the Foliage Season, a time when the country's landscapes are transformed by the beauty of changing leaves.The most famous of these foliage is the maple leaves, which usually begin to change colors in mid-October.
+    
+    One of the most popular places to see autumn foliage in Korea is atNaejangsan National Park. This park is home to more than 600,000 maple trees and attracts thousands of visitors each year. Other popularfoliage viewing spots include Seoraksan National Park, Namsan Park, and Gyeongju National Park.
+    
+    In addition to maple leaves, there are also other types of trees thatdisplay beautiful autumn foliage in Korea. For example, gingko treesturn bright yellow in late autumn, while the oak trees turn deep red.
+    
+    During the foliage season, many Koreans take part in outdoor activities like hiking and picnicking to enjoy the beautiful foliage and warmweather. It's also a popular time for festivals and cultural events,such as the Seoul Lantern Festival and the Andong Mask Dance Festival.
+    
+    Overall, Korea's Foliage Season is a time of beauty, renewal, and celebration, and it's definitely worth experiencing if you have the opportunity to do so.`,
+  },
+  {
+    id: 4,
+    title: "Autumn Festivals and Events",
+    description: `Korea's autumn season is a time of celebration and harvest, and thereare many festivals and events that take place throughout the countryduring this time. These events celebrate the arrival of autumn andshowcase the beauty of nature, as well as Korean culture and traditions.
+    
+    Some of the most popular autumn festivals and events in Korea includethe Seoul Lantern Festival, the Busan International Film Festival, andthe Andong Mask Dance Festival, which all feature stunning displays ofcultural performances and food vendors. Other festivals and events, such as the Gwangju World Kimchi Culture Festival and the Jeonju BibimbapFestival, provide unique and memorable experiences that showcase Koreantraditions and customs.
+    
+    Some of the most popular autumn festivals and events in Korea includethe Seoul Lantern Festival, the Busan International Film Festival, andthe Andong Mask Dance Festival, which all feature stunning displays ofcultural performances and food vendors. Other festivals and events, such as the Gwangju World Kimchi Culture Festival and the Jeonju BibimbapFestival, provide unique and memorable experiences that showcase Koreantraditions and customs.`,
+  },
+  {
+    id: 5,
+    title: "Autumn Food and Cuisine",
+    description: `Korean autumn cuisine is all about harvest season and warming dishes that provide comfort during the cooler weather. Some of the most popular autumn dishes in Korea include stews, soups, and hot pots, which are perfect for warming up on a chilly day.
+    
+    One of the most well-known Korean autumn dishes is the spicy and savory kimchi stew, made with fermented cabbage, pork, and a variety ofvegetables and spices. Other popular stews and soups include the beef bone soup, the spicy seafood stew, and the mung bean soup.
+    
+    Autumn is also a time for harvesting seasonal vegetables and fruits, such as pumpkins, sweet potatoes, and persimmons. These ingredients are often used in traditional Korean dishes, such as hobakjuk (pumpkin porridge) and goguma latte (sweet potato latte).
+    
+    In addition to savory dishes, there are also many autumn desserts andsnacks to try in Korea. One popular treat is the hotteok, a sweet anddoughy pancake filled with brown sugar and cinnamon. Another populardessert is the bungeoppang, a fish-shaped pastry filled with sweet redbean paste.
+    
+    Harvest season and warming dishes that provide comfort during the cooler weather. Some of the most popular autumn dishes in Korea include stews,soups, and hot pots, which are perfect for warming up on a chilly day.One of the most well-known Korean autumn dishes is the spicy and savorykimchi stew, made with fermented cabbage, pork, and a variety ofvegetables and spices. Other popular stews and soups include the beefbone soup, the spicy seafood stew, and the mung bean soup. Autumn isalso a time for harvesting seasonal vegetables and fruits, such aspumpkins, sweet potatoes, and persimmons. These ingredients are oftenused in traditional Korean dishes, such as hobakjuk (pumpkin porridge)and goguma latte (sweet potato latte). In addition to savory dishes,there are also many autumn desserts and snacks to try in Korea. Onepopular treat is the hotteok, a sweet and doughy pancake filled withbrown sugar and cinnamon. Another popular dessert is the bungeoppang, afish-shaped pastry filled with sweet red bean paste. Overall, Koreanautumn cuisine is all about hearty and comforting dishes that reflectthe season's harvest and natural bounty. Whether you're looking forsomething savory or sweet, there are plenty of delicious and satisfyingautumn foods to try in Korea.`,
+  },
+  {
+    id: 6,
+    title: "Conclusion",
+    description: `Autumn is a truly beautiful season in Korea, filled with stunning foliage, comfortable weather, and a variety of outdoor festivals and events. Whether you're interested in exploring the country's natural beauty, experiencing traditional Korean culture, or simply enjoying some delicious autumn cuisine, there is something for everyone to enjoy during this special time of year.`,
+  },
+];
+
 export const festivalActivityList = [
   "Jinju Namgang Yudeung Festival",
   "Gangneung Coffee Festival",

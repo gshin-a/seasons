@@ -1,3 +1,42 @@
+export const introductionList = [
+  {
+    id: 1,
+    title: "Introduction to Summer in Korea",
+    description: `Summer in Korea is a time of warmth, energy, and festivity. With longdays and plenty of sunshine, the season offers an abundance of outdooractivities, cultural experiences, and delicious food. In this article,we will explore what to expect during summer in Korea, including climate and temperatures, summer festivals and events, popular activities, andthe best foods to try.`,
+  },
+  {
+    id: 2,
+    title: "Climate and Temperatures",
+    description: `Summer in Korea lasts from June to August and is characterized by warmtemperatures, high humidity, and occasional rain showers. The averagetemperature during this time of year is around 25 to 30 degrees Celsius(77 to 86 degrees Fahrenheit), with the hottest months being July andAugust. Visitors to Korea during the summer should be prepared for theheat and humidity by wearing lightweight clothing and staying hydrated.`,
+  },
+  {
+    id: 3,
+    title: "Summer Festivals and Events",
+    description: `Summer in Korea is a time of celebration, and there are plenty offestivals and events that take place throughout the season. One of themost popular events is the Boryeong Mud Festival, held in the city ofBoryeong in July. This festival features mud wrestling, mud sliding, and other muddy activities that attract visitors from all over the world.
+
+    Another popular festival is the Busan Sea Festival, which takes place in August and celebrates the city's coastal location with a range of water sports, cultural events, and fireworks displays. Other summer festivals and events in Korea include the Haeundae Sand Festival, the Andong Mask Dance Festival, and the Seoul Fringe Festival. customs`,
+  },
+  {
+    id: 4,
+    title: "Popular Activities",
+    description: `Summer in Korea offers a wealth of outdoor activities that take advantage of the warm weather and beautiful landscapes. Beaches such as Haeundae and Gyeongpo offer opportunities for swimming, sunbathing, and water sports, while mountains like Seoraksan and Bukhansan provide hiking and camping adventures.
+
+    For those interested in Korean culture, summer is a great time toexplore historic sites and attend cultural events. Palaces such asGyeongbokgung and Changdeokgung are open for visitors to explore, and traditional performances like Nanta and B-boy shows offer entertaining cultural experiences.`,
+  },
+  {
+    id: 5,
+    title: "Summer Food and Cuisine",
+    description: `Summer in Korea brings a variety of delicious foods that are perfect for the warm weather. One popular dish is naengmyeon, cold buckwheat noodles served in a tangy broth with sliced beef or chicken. Other popularsummer foods include mul naengmyeon, a cold noodle soup made with beefbroth and sliced meat, and samgyetang, a hot soup made with chicken,ginseng, and other herbs.
+
+    Summer also brings a bounty of fresh fruits and vegetables, such aswatermelon, peaches, and tomatoes, which are used in a variety of dishes and desserts. Patbingsu, a shaved ice dessert with sweet toppings likered beans, fruit, and condensed milk, is a favorite among Koreans during the hot summer months.`,
+  },
+  {
+    id: 6,
+    title: "Conclusion",
+    description: `Summer in Korea is a time of warmth, celebration, and fun. With plenty of festivals and events, outdoor activities, and delicious food,visitors to Korea during the summer can experience the best of what the country has to offer. From mud wrestling to mountain climbing, and from cold noodle soup to shaved ice desserts, there is something for everyone to enjoy during the summer in Korea.`,
+  },
+];
+
 export const festivalActivityList = [
   "Busan Sea Festival",
   "Jinan Highland Watermelon Festival",
