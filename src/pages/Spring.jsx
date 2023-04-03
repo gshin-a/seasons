@@ -52,7 +52,6 @@ const Spring = ({ isDarkMode }) => {
           {springState === "board" && <Board springPostData={springPostData} />}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

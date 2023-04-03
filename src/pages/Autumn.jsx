@@ -52,7 +52,6 @@ const Autumn = ({ isDarkMode }) => {
           {autumnState === "board" && <Board springPostData={autumnPostData} />}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

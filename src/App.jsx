@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Hamburger, { HamburgerSidebar } from "./components/Hamburger";
 import Home from "./pages/Home";
 import Spring from "./pages/Spring";
@@ -90,6 +91,8 @@ function App() {
             }
           />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );

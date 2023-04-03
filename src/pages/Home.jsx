@@ -20,7 +20,6 @@ const Home = ({ isDarkMode }) => {
       <MainContent2 text={summerText} imgSrc={summerImgSrc} season="summer" />
       <MainContent1 text={autumnText} imgSrc={autumnImgSrc} season="autumn" />
       <MainContent2 text={winterText} imgSrc={winterImgSrc} season="winter" />
-      <Footer />
     </div>
   );
 };
