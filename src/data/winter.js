@@ -79,56 +79,56 @@ export const tipList = [
     title: "Dress warmly",
     description:
       "Winters in Korea can be very cold, with temperatures often dipping below freezing. Dress in layers and wear warm, boots, a heavy coat, gloves, and a hat.",
-    link: "",
+    link: "https://english.visitkorea.or.kr/enu/ATR/SI_ENG_2_11_1.jsp",
   },
   {
     imgNum: 2,
     title: "Try Korean street food",
     description:
       "Korean street food is delicious all year round, but it's especially satisfying in the winter months. Warm up with some hotteok (sweet pancakes), tteokbokki (spicy rice cakes), or mandu (dumplings).",
-    link: "",
+    link: "https://10mag.com/10-korean-winter-street-foods-to-beat-the-cold/",
   },
   {
     imgNum: 3,
     title: "Visit a hot spring",
     description:
       "There's nothing more relaxing than soaking in a hot spring on a cold winter day.",
-    link: "",
+    link: "https://www.koreatimes.co.kr/www/nation/2023/01/631_172128.html",
   },
   {
     imgNum: 4,
     title: "Go ice skating",
     description:
       "Ice skating is a popular winter activity in Korea, with many outdoor rinks set up in public spaces. Put on your skates and glide across the ice, enjoying the winter scenery.",
-    link: "",
+    link: "https://www.trazy.com/theme/ice_skating_seoul",
   },
   {
     imgNum: 5,
     title: "Visit a winter festival",
     description:
       "Korea has many winter festivals, such as the Hwacheon Sancheoneo Ice Festival and the Taebaeksan Mountain Snow Festival.",
-    link: "",
+    link: "https://english.visitkorea.or.kr/enu/ATR/SI_ENG_2_11_4.jsp",
   },
   {
     imgNum: 6,
     title: "Visit a ski resort",
     description:
       "Korea has many excellent ski resorts, such as Yongpyong Ski Resort and Alpensia Ski Resort. Hit the slopes and enjoy the thrill of skiing or snowboarding.",
-    link: "",
+    link: "https://www.klook.com/en-SG/blog/best-ski-resorts-in-south-korea/",
   },
   {
     imgNum: 7,
     title: "Try Korean hot pot",
     description:
       "Korean hot pot, or jjigae, is a hearty and comforting dish that's perfect for the winter months. Warm up with a bowl of hot, spicy stew.",
-    link: "",
+    link: "https://www.mangoplate.com/en/top_lists/eng_copy_1422_jeongol",
   },
   {
     imgNum: 8,
     title: "Visit indoor attractions",
     description:
       "Consider visiting indoor attractions like museums, art galleries, or indoor theme parks.",
-    link: "",
+    link: "https://www.trazy.com/event/seoul-winter-indoor-activities",
   },
 ];
 

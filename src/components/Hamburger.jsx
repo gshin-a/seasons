@@ -31,7 +31,7 @@ const HamburgerSidebarSubmenu = ({ season }) => {
   );
 };
 
-export const HamburgerSidebar = ({ handleHamburgerClose }) => {
+export const HamburgerSidebar = () => {
   const location = useLocation();
 
   return (
