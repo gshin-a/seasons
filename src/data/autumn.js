@@ -145,102 +145,119 @@ export const tipList = [
 export const JejuGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-1.jpg`,
-    description: "Dolhareubang in Jeju Island",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-1.jpg`,
+    description: "Jeju travel destination at the beginning of a new season",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-2.jpg`,
-    description: "Jeju tourist attractions that you can't miss this spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-2.jpg`,
+    description: "Places to go on an autumn trip to Jeju Island",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-3.jpg`,
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-3.jpg`,
     description:
-      "Jeju, where spring has come first, is in full bloom with cherry blossoms and rape flowers",
+      "A colorful trip to Jeju Island for three days and two nights to enjoy the taste and beauty of autumn",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-4.jpg`,
-    description: "7 reasons why you should travel to Jeju in April",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-4.jpg`,
+    description: "Jeju Island's attractions for autumn with your child",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-5.jpg`,
-    description: "Jeju Spring Full of Flower Scent",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-5.jpg`,
+    description:
+      "A romantic autumn trip to Jeju, walking along the silver grass road",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-6.jpg`,
-    description:
-      "Recommended trekking course to feel the spring of Hallasan Mountain",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-autumn-6.jpg`,
+    description: "Fall into Jeju Island",
   },
 ];
 
 export const SeoulGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-1.jpg`,
-    description: "a two-legged spring outing in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-1.jpg`,
+    description: "Seoul Autumn Leaves Attracting the World",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-2.jpg`,
-    description: "Seoul Spring Date. Best 5 for couples",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-2.jpg`,
+    description: "An autumn scene that will shake people's hearts",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-3.jpg`,
-    description: "Places to go for a walk in Seoul's spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-3.jpg`,
+    description: "Fall foliage outing at Seoul Forest Park",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-4.jpg`,
-    description:
-      "This is the spring picnic in Seoul, the spring scenery of Seoul Forest",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-4.jpg`,
+    description: "Namsan Tower in Seoul welcomes autumn",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-5.jpg`,
-    description: "Enjoy Spring Flowers at Seoul Land!",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-5.jpg`,
+    description: "Autumn, Hanbok, and Us",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-6.jpg`,
-    description: "Namsan Tower, a good place to go on a spring trip in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-autumn-6.jpg`,
+    description: "To walk in the autumn rain in the Seoul Forest",
   },
 ];
 
 export const BusanGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-1.jpg`,
-    description:
-      "It's already spring in Busan! Let's go to the plum blossom destination",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-1.jpg`,
+    description: "Autumn lake in Busan is beautiful",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-2.jpg`,
-    description: "Spring in Daishin Park with Cherry Blossoms",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-2.jpg`,
+    description:
+      "A forest tour in the city where you can enjoy autumn in Busan",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-3.jpg`,
-    description: "Spring Sunrise at Hwangnyeongsan Mountain in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-3.jpg`,
+    description: "The sunset and night view of Busan full of emotions",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-4.jpg`,
-    description: "a spring flower trip to Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-4.jpg`,
+    description: "Autumn Maple Trip to Busan",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-5.jpg`,
-    description: "Spring in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-5.jpg`,
+    description: "Autumn Moonrise Night View in Dongdaeshin-dong, Busan",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-6.jpg`,
-    description: "Let's go to Busan in spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-autumn-6.jpg`,
+    description: "Autumn at Chungnyeolsa Temple in Busan",
   },
 ];

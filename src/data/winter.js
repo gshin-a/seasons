@@ -135,102 +135,119 @@ export const tipList = [
 export const JejuGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-1.jpg`,
-    description: "Dolhareubang in Jeju Island",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-1.jpg`,
+    description: "Let's enjoy the winter of Jeju Island",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-2.jpg`,
-    description: "Jeju tourist attractions that you can't miss this spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-2.jpg`,
+    description: "2 days and 1 night in Jeju in winter",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-3.jpg`,
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-3.jpg`,
     description:
-      "Jeju, where spring has come first, is in full bloom with cherry blossoms and rape flowers",
+      "The secret place of Jeju Island that only the true travel expert knows",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-4.jpg`,
-    description: "7 reasons why you should travel to Jeju in April",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-4.jpg`,
+    description: "A preview of Jeju's winter scenery",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-5.jpg`,
-    description: "Jeju Spring Full of Flower Scent",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-5.jpg`,
+    description: "Jeju's unique charm covered with snow",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-jeju-6.jpg`,
-    description:
-      "Recommended trekking course to feel the spring of Hallasan Mountain",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-jeju-winter-6.jpg`,
+    description: "A romantic spot where you can enjoy Jeju's winter",
   },
 ];
 
 export const SeoulGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-1.jpg`,
-    description: "a two-legged spring outing in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-1.jpg`,
+    description:
+      "The beauty of winter is popping. a snowy landscape of Seoul Forest",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-2.jpg`,
-    description: "Seoul Spring Date. Best 5 for couples",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-2.jpg`,
+    description: "What must you do in Seoul in winter?",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-3.jpg`,
-    description: "Places to go for a walk in Seoul's spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-3.jpg`,
+    description: "To go to Seoul Forest, a winter photo spot",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-4.jpg`,
-    description:
-      "This is the spring picnic in Seoul, the spring scenery of Seoul Forest",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-4.jpg`,
+    description: "Enjoying Winter in Seoul",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-5.jpg`,
-    description: "Enjoy Spring Flowers at Seoul Land!",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-5.jpg`,
+    description: "Frozen of Seoul",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-seoul-6.jpg`,
-    description: "Namsan Tower, a good place to go on a spring trip in Seoul",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-seoul-winter-6.jpg`,
+    description: "The first winter has arrived in Seoul",
   },
 ];
 
 export const BusanGalleryList = [
   {
     id: 1,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-1.jpg`,
-    description:
-      "It's already spring in Busan! Let's go to the plum blossom destination",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-1.jpg`,
+    description: "It snowed a lot in Busan",
   },
   {
     id: 2,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-2.jpg`,
-    description: "Spring in Daishin Park with Cherry Blossoms",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-2.jpg`,
+    description: "Full of romance! Enjoy 100% of Busan's winter sea",
   },
   {
     id: 3,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-3.jpg`,
-    description: "Spring Sunrise at Hwangnyeongsan Mountain in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-3.jpg`,
+    description:
+      "Is Busan a summer vacation spot? We need to see Busan in winter",
   },
   {
     id: 4,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-4.jpg`,
-    description: "a spring flower trip to Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-4.jpg`,
+    description: "A winter sea trip to Busan",
   },
   {
     id: 5,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-5.jpg`,
-    description: "Spring in Busan",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-5.jpg`,
+    description: "Winter trip to Busan. A picture at Haeundae Hotel in Busan",
   },
   {
     id: 6,
-    imgSrc: process.env.PUBLIC_URL + `/assets/gallery-content-busan-6.jpg`,
-    description: "Let's go to Busan in spring",
+    imgSrc:
+      process.env.PUBLIC_URL + `/assets/gallery-content-busan-winter-6.jpg`,
+    description: "It's warm in Busan in winter, too",
   },
 ];
