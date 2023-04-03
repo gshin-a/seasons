@@ -52,7 +52,7 @@ const GalleryItemLeftButton = ({ type }) => {
   );
 };
 
-const GalleryItemRightButton = ({ type, galleryLength }) => {
+const GalleryItemRightButton = ({ type }) => {
   return (
     <button
       className={`gallery-item-right-button gallery-item-right-button-${type}`}
