@@ -36,7 +36,7 @@ const delay = (s) => {
   });
 };
 
-const Carousel = ({ isDarkMode }) => {
+const Carousel = () => {
   const [curImg, setCurImg] = useState(0);
   const [autoslide, setAutoslide] = useState(true);
 
@@ -107,7 +107,7 @@ const Carousel = ({ isDarkMode }) => {
   }, [autoslide]);
 
   return (
-    <div className={"carousel" + (isDarkMode ? " carousel-darkmode" : "")}>
+    <div className="carousel">
       {!autoslide && (
         <div className="carousel-button-autoslide">auto slide off..</div>
       )}
