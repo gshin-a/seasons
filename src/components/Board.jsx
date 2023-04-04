@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const BoardItem = ({ postnumber, title, user, content }) => {
   const [openItem, setOpenItem] = useState(false);
@@ -24,6 +24,25 @@ const BoardItem = ({ postnumber, title, user, content }) => {
 const Board = ({ springPostData }) => {
   const [searchInput, setSearchInput] = useState("");
   const [filter, setFilter] = useState("");
+  const [sortType, setSortType] = useState("latest");
+  const [sortedData, setSortedData] = useState(springPostData);
+
+  const latestSort = (a, b) => {
+    return b.id - a.id;
+  };
+
+  const oldestSort = (a, b) => {
+    return a.id - b.id;
+  };
+
+  useEffect(() => {
+    let sortFunc = latestSort;
+    if (sortType && sortType === "oldest") sortFunc = oldestSort;
+    const sortedData = [...springPostData].sort(sortFunc);
+    setSortedData(sortedData);
+  }, [springPostData, sortType]);
+
+  if (sortedData.length <= 0) return;
 
   return (
     <div className="board">
@@ -57,8 +76,18 @@ const Board = ({ springPostData }) => {
         >
           reset
         </button>
+        <select
+          className="board-select"
+          onChange={(e) => {
+            setSortType(e.target.value);
+            console.log("input select");
+          }}
+        >
+          <option value="latest">latest</option>
+          <option value="oldest">oldest</option>
+        </select>
       </div>
-      {springPostData.map(
+      {sortedData.map(
         ({ id, title, userId, body }) =>
           title.indexOf(filter) !== -1 && (
             <BoardItem

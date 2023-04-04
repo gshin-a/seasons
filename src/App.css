@@ -1352,6 +1352,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .board-search-button {
@@ -1383,6 +1384,11 @@
   cursor: pointer;
   position: absolute;
   top: 5px;
+  right: 0;
+}
+
+.board-select {
+  position: absolute;
   right: 0;
 }
 
