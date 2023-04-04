@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CreateIcon from "@mui/icons-material/Create";
 
 const GalleryItemContent = ({ imgSrc, description }) => {
   const [openDetail, setOpenDetail] = useState(false);
@@ -143,11 +144,97 @@ const GalleryItem = ({ title, type, galleryList }) => {
 };
 
 const Gallery = ({ JejuGalleryList, SeoulGalleryList, BusanGalleryList }) => {
+  const [imgSrc, setImgSrc] = useState("");
+  const [description, setDescription] = useState("");
+  const [place, setPlace] = useState("jeju");
+  const [openForm, setOpenForm] = useState(false);
+
+  const handlePost = (e) => {
+    e.preventDefault();
+    if (!imgSrc) {
+      alert("Select image file");
+      return;
+    }
+    if (!description) {
+      alert("Write descrition");
+      return;
+    }
+    const reader = new FileReader();
+    reader.readAsDataURL(imgSrc);
+    reader.onload = (event) => {
+      let curList;
+      if (place === "jeju") curList = JejuGalleryList;
+      else if (place === "seoul") curList = SeoulGalleryList;
+      else curList = BusanGalleryList;
+      const newImgSrc = event.target.result;
+      const newItem = {
+        id: curList.at(-1).id + 1,
+        imgSrc: newImgSrc,
+        description,
+      };
+      curList.push(newItem);
+      setImgSrc("");
+      setDescription("");
+      setPlace("jeju");
+      document.querySelector('input[type="file"]').value = "";
+      setOpenForm(false);
+    };
+  };
+
   return (
     <div className="gallery">
       <GalleryItem title="Jeju Island" type={1} galleryList={JejuGalleryList} />
       <GalleryItem title="Seoul" type={2} galleryList={SeoulGalleryList} />
       <GalleryItem title="Busan" type={3} galleryList={BusanGalleryList} />
+      {openForm ? (
+        <div className="gallery-post-form-wrapper">
+          <form className="gallery-post-form">
+            <div>Upload Form</div>
+            <select onChange={(e) => setPlace(e.target.value)} value={place}>
+              <option value="jeju">Jeju</option>
+              <option value="seoul">Seoul</option>
+              <option value="busan">Busan</option>
+            </select>
+            <input
+              type="file"
+              accept="image/jpg,impge/png,image/jpeg,image/gif"
+              name="imgSrc"
+              className="gallery-post-file"
+              onChange={(e) => {
+                setImgSrc(e.target.files[0]);
+              }}
+            />
+            <textarea
+              name="description"
+              className="gallery-post-description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+            <div className="gallery-post-button">
+              <button
+                type="submit"
+                className="gallery-post-savebutton"
+                onClick={handlePost}
+              >
+                save
+              </button>
+              <button
+                className="gallery-post-resetbutton"
+                onClick={() => setOpenForm(false)}
+              >
+                cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      ) : (
+        <button
+          className="gallery-upload-button"
+          onClick={() => setOpenForm(!openForm)}
+        >
+          <CreateIcon />
+        </button>
+      )}
     </div>
   );
 };
